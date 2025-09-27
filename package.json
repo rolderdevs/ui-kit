@@ -2,6 +2,7 @@
 	"name": "ui-kit",
 	"scripts": {},
 	"workspaces": [
-		"backends/*"
+		"design-system/**",
+		"apps/**"
 	]
 }
