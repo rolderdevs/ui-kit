@@ -6,8 +6,6 @@ import {
 import { convertToModelMessages, streamText, type UIMessage } from "ai";
 import { Elysia } from "elysia";
 
-import "dotenv/config";
-
 const port = process.env.PORT || 3000;
 const openrouter = createOpenRouter();
 const model = openrouter.chat("google/gemini-2.5-flash");

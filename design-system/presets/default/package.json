@@ -1,0 +1,8 @@
+{
+	"name": "rolder-default-preset",
+	"type": "module",
+	"description": "Default Rolder preset",
+	"devDependencies": {
+		"@pandacss/dev": "^1.3.0"
+	}
+}

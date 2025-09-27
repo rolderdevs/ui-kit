@@ -1,5 +1,5 @@
 {
-	"name": "ui-kit",
+	"name": "ui-kit-workspace",
 	"scripts": {},
 	"workspaces": [
 		"design-system/**",
