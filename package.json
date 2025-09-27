@@ -2,7 +2,13 @@
 	"name": "ui-kit-workspace",
 	"scripts": {},
 	"workspaces": [
-		"design-system/**",
+		"design-system/styled-system/*",
+		"design-system/presets/*",
+		"design-system/themes/*",
 		"apps/**"
+	],
+	"trustedDependencies": [
+		"core-js",
+		"esbuild"
 	]
 }

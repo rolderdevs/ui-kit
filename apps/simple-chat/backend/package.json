@@ -11,9 +11,8 @@
 	"dependencies": {
 		"@elysiajs/cors": "^1.4.0",
 		"@openrouter/ai-sdk-provider": "^1.2.0",
-		"ai": "^5.0.47",
-		"elysia": "^1.4.6",
-		"zod": "^4.1.11"
+		"ai": "^5.0.56",
+		"elysia": "^1.4.7"
 	},
 	"devDependencies": {
 		"@types/bun": "^1.2.22",

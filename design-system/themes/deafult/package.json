@@ -1,6 +1,6 @@
 {
-	"name": "rolder-default-preset",
-	"description": "Default Rolder preset",
+	"name": "rolder-default-theme",
+	"description": "Default Rolder theme",
 	"type": "module",
 	"module": "./index.ts",
 	"types": "./index.ts",
