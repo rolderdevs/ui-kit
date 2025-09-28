@@ -21,4 +21,4 @@ jobs:
       - name: Publish package
         run: |
           cd design-system/themes/default
-          npx jsr publish
+          bunx jsr publish
