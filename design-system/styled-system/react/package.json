@@ -1,6 +1,6 @@
 {
 	"name": "@rolder/ss-react",
-	"version": "0.3.0",
+	"version": "0.1.0",
 	"type": "module",
 	"description": "Styled system for React",
 	"devDependencies": {
@@ -53,5 +53,8 @@
 			"import": "./jsx/index.mjs"
 		},
 		"./styles.css": "./styles.css"
+	},
+	"publishConfig": {
+		"access": "public"
 	}
 }

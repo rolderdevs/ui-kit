@@ -1,6 +1,6 @@
 {
 	"name": "@rolder/ui-kit-react",
-	"version": "3.2.0",
+	"version": "3.0.0",
 	"type": "module",
 	"module": "./index.ts",
 	"types": "./index.ts",
@@ -25,10 +25,13 @@
 		"@rsbuild/core": "~1.5.12",
 		"@rsbuild/plugin-react": "^1.4.1",
 		"@rslib/core": "^0.14.0",
-		"@types/react": "^19.1.13"
+		"@types/react": "^19.1.15"
 	},
 	"peerDependencies": {
 		"react": "^19.1.1",
 		"react-dom": "^19.1.1"
+	},
+	"publishConfig": {
+		"access": "public"
 	}
 }
