@@ -1,4 +1,4 @@
-import { defineGlobalStyles } from "@pandacss/dev";
+import { defineGlobalStyles, type GlobalStyleObject } from "@pandacss/dev";
 
 export default defineGlobalStyles({
 	"html, body": {
@@ -10,4 +10,4 @@ export default defineGlobalStyles({
 		lineHeight: "24px",
 		letterSpacing: "0",
 	},
-});
+}) as GlobalStyleObject;

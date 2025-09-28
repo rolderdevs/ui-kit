@@ -1,4 +1,4 @@
-import { defineTokens } from "@pandacss/dev";
+import { defineTokens, type Tokens } from "@pandacss/dev";
 
 export default defineTokens({
 	shadows: {
@@ -57,4 +57,4 @@ export default defineTokens({
 			],
 		},
 	},
-});
+}) as Tokens;

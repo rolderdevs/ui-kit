@@ -1,4 +1,4 @@
-import { defineTextStyles } from "@pandacss/dev";
+import { defineTextStyles, type TextStyles } from "@pandacss/dev";
 
 export default defineTextStyles({
 	h3: {
@@ -37,4 +37,4 @@ export default defineTextStyles({
 			letterSpacing: "0",
 		},
 	},
-});
+}) as TextStyles;

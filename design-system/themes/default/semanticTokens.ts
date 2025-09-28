@@ -1,4 +1,4 @@
-import { defineSemanticTokens } from "@pandacss/dev";
+import { defineSemanticTokens, type SemanticTokens } from "@pandacss/dev";
 
 export default defineSemanticTokens({
 	colors: {
@@ -15,12 +15,6 @@ export default defineSemanticTokens({
 					_osDark: "{colors.amber.800}",
 				},
 			},
-			// bg: {
-			// 	value: {
-			// 		base: "{colors.brand.100}",
-			// 		_osDark: "{colors.amber.700}",
-			// 	},
-			// },
 			muted: {
 				value: {
 					base: "{colors.gray.200}",
@@ -173,4 +167,4 @@ export default defineSemanticTokens({
 			},
 		},
 	},
-});
+}) as SemanticTokens;
