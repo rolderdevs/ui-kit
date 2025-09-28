@@ -1,4 +1,4 @@
-import { definePreset, type Preset } from "@pandacss/dev";
+import { definePreset } from "@pandacss/dev";
 import globalCss from "./globalCss";
 import keyframes from "./keyframes";
 import semanticTokens from "./semanticTokens";
@@ -16,4 +16,4 @@ export default definePreset({
 		},
 	},
 	globalCss,
-}) as Preset;
+});

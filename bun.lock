@@ -71,7 +71,6 @@
     },
     "design-system/themes/default": {
       "name": "@rolder/theme-default",
-      "version": "0.1.0",
       "devDependencies": {
         "@pandacss/dev": "^1.4.0",
       },

@@ -1,4 +1,4 @@
-import { type CssKeyframes, defineKeyframes } from "@pandacss/dev";
+import { defineKeyframes } from "@pandacss/dev";
 
 export default defineKeyframes({
 	fadeOut: {
@@ -13,4 +13,4 @@ export default defineKeyframes({
 		"0%": { transform: "translateY(-8px)", opacity: "0" },
 		"100%": { transform: "translateY(0px)", opacity: "1" },
 	},
-}) as CssKeyframes;
+});

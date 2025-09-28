@@ -1,4 +1,4 @@
-import { defineTokens, type Tokens } from "@pandacss/dev";
+import { defineTokens } from "@pandacss/dev";
 import colors from "./colors";
 import shadows from "./shadows";
 
@@ -12,4 +12,4 @@ export default defineTokens({
 		lg: { value: "16px" },
 		full: { value: "9999px" },
 	},
-}) as Tokens;
+});

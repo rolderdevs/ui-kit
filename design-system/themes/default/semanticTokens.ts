@@ -1,4 +1,4 @@
-import { defineSemanticTokens, type SemanticTokens } from "@pandacss/dev";
+import { defineSemanticTokens } from "@pandacss/dev";
 
 export default defineSemanticTokens({
 	colors: {
@@ -167,4 +167,4 @@ export default defineSemanticTokens({
 			},
 		},
 	},
-}) as SemanticTokens;
+});

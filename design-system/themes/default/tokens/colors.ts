@@ -1,4 +1,4 @@
-import { defineTokens, type Tokens } from "@pandacss/dev";
+import { defineTokens } from "@pandacss/dev";
 
 export default defineTokens({
 	colors: {
@@ -75,4 +75,4 @@ export default defineTokens({
 			900: { value: "#041A2F" },
 		},
 	},
-}) as Tokens;
+});
