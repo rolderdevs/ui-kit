@@ -24,8 +24,8 @@ jobs:
         uses: oven-sh/setup-bun@v2
         with:
           bun-version: latest
-          registries: |
-            @rolder:https://npm.pkg.github.com/|${{ secrets.GITHUB_TOKEN }}
+          registry-url: https://npm.pkg.github.com
+          scope: "@rolder"
 
       - name: Install dependencies
         run: bun install --frozen-lockfile
