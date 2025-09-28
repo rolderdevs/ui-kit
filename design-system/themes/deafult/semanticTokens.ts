@@ -2,23 +2,49 @@ import { defineSemanticTokens } from "@pandacss/dev";
 
 export default defineSemanticTokens({
 	colors: {
-		text: {
+		fg: {
 			DEFAULT: {
 				value: {
-					base: "{colors.gray.900}",
-					_osDark: "{colors.stone.200}",
+					base: "{colors.brand.500}",
+					_osDark: "{colors.amber.700}",
 				},
 			},
-			bright: {
+			hover: {
 				value: {
-					base: "{colors.gray.950}",
-					_osDark: "{colors.stone.200}",
+					base: "{colors.brand.700}",
+					_osDark: "{colors.amber.800}",
 				},
 			},
+			// bg: {
+			// 	value: {
+			// 		base: "{colors.brand.100}",
+			// 		_osDark: "{colors.amber.700}",
+			// 	},
+			// },
 			muted: {
 				value: {
-					base: "{colors.gray.500}",
-					_osDark: "{colors.stone.500}",
+					base: "{colors.gray.200}",
+					_osDark: "{colors.stone.800}",
+				},
+			},
+			secondary: {
+				DEFAULT: {
+					value: {
+						base: "{colors.gray.200}",
+						_osDark: "{colors.stone.800}",
+					},
+				},
+				hover: {
+					value: {
+						base: "{colors.gray.300}",
+						_osDark: "{colors.stone.700}",
+					},
+				},
+				muted: {
+					value: {
+						base: "{colors.gray.200}",
+						_osDark: "{colors.stone.800}",
+					},
 				},
 			},
 		},
@@ -39,6 +65,26 @@ export default defineSemanticTokens({
 				value: {
 					base: "{colors.white}",
 					_osDark: "{colors.stone.800}",
+				},
+			},
+		},
+		text: {
+			DEFAULT: {
+				value: {
+					base: "{colors.gray.900}",
+					_osDark: "{colors.stone.200}",
+				},
+			},
+			bright: {
+				value: {
+					base: "{colors.gray.950}",
+					_osDark: "{colors.stone.200}",
+				},
+			},
+			muted: {
+				value: {
+					base: "{colors.gray.500}",
+					_osDark: "{colors.stone.500}",
 				},
 			},
 		},
@@ -63,7 +109,7 @@ export default defineSemanticTokens({
 					_osDark: "{colors.stone.200}",
 				},
 			},
-			disabled: {
+			muted: {
 				value: {
 					base: "{colors.gray.400}",
 					_osDark: "{colors.stone.600}",

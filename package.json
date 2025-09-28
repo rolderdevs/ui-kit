@@ -1,10 +1,7 @@
 {
 	"name": "ui-kit-workspace",
-	"scripts": {},
 	"workspaces": [
-		"design-system/styled-system/*",
-		"design-system/presets/*",
-		"design-system/themes/*",
+		"design-system/**",
 		"apps/**"
 	],
 	"trustedDependencies": [

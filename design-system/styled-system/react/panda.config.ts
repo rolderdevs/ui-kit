@@ -1,6 +1,6 @@
 import { defineConfig } from "@pandacss/dev";
-import preset from "rolder-default-preset";
-import theme from "rolder-default-theme";
+import preset from "@rolder/preset-default";
+import theme from "@rolder/theme-default";
 
 export default defineConfig({
 	preflight: false,

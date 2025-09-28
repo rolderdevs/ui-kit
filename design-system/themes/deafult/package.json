@@ -1,5 +1,5 @@
 {
-	"name": "rolder-default-theme",
+	"name": "@rolder/theme-default",
 	"description": "Default Rolder theme",
 	"type": "module",
 	"module": "./index.ts",

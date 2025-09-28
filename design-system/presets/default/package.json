@@ -1,5 +1,5 @@
 {
-	"name": "rolder-default-preset",
+	"name": "@rolder/preset-default",
 	"description": "Default Rolder preset",
 	"type": "module",
 	"module": "./index.ts",

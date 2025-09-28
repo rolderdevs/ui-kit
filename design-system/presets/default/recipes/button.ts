@@ -22,25 +22,25 @@ export const button = defineRecipe({
 	variants: {
 		variant: {
 			primary: {
-				bg: "primary",
+				bg: "fg",
 				color: "text",
 				_hover: {
-					bg: "primary.hover",
+					bg: "fg.hover",
 				},
 				_disabled: {
-					color: "text.disabled",
-					bg: "primary.disabled",
+					color: "text.muted",
+					bg: "fg.muted",
 				},
 			},
 			secondary: {
-				bg: "secondary",
+				bg: "fg.secondary",
 				color: "text",
 				_hover: {
-					bg: "secondary.hover",
+					bg: "fg.secondary.hover",
 				},
 				_disabled: {
-					color: "text.disabled",
-					bg: "secondary.disabled",
+					color: "text.muted",
+					bg: "fg.secondary.muted",
 				},
 			},
 		},
