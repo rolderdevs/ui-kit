@@ -1,6 +1,7 @@
 {
 	"name": "@rolder/theme-default",
 	"version": "0.1.0",
+	"private": false,
 	"description": "Default Rolder theme",
 	"type": "module",
 	"module": "./index.ts",
