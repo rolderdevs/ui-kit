@@ -1,9 +1,16 @@
 {
 	"name": "@rolder/theme-default",
+	"version": "0.1.0",
 	"description": "Default Rolder theme",
 	"type": "module",
 	"module": "./index.ts",
 	"types": "./index.ts",
+	"repository": {
+		"url": "https://github.com/rolderdevs/ui-kit.git"
+	},
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com"
+	},
 	"devDependencies": {
 		"@pandacss/dev": "^1.4.0"
 	}

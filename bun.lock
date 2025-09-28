@@ -69,8 +69,9 @@
         "@rolder/theme-default": "workspace:*",
       },
     },
-    "design-system/themes/deafult": {
+    "design-system/themes/default": {
       "name": "@rolder/theme-default",
+      "version": "0.1.0",
       "devDependencies": {
         "@pandacss/dev": "^1.4.0",
       },
@@ -251,7 +252,7 @@
 
     "@rolder/ss-react": ["@rolder/ss-react@workspace:design-system/styled-system/react"],
 
-    "@rolder/theme-default": ["@rolder/theme-default@workspace:design-system/themes/deafult"],
+    "@rolder/theme-default": ["@rolder/theme-default@workspace:design-system/themes/default"],
 
     "@rolder/ui-kit-react": ["@rolder/ui-kit-react@workspace:design-system/elements/react"],
 
