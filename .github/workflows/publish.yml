@@ -35,6 +35,7 @@ jobs:
       - name: Publish theme-default package
         run: |
           cd design-system/themes/default
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
             bun publish --dry-run --access public
           else
