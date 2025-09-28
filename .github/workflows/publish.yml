@@ -18,7 +18,31 @@ jobs:
           bun-version: latest
       - name: Install dependencies
         run: bun install --frozen-lockfile
-      - name: Publish package
+
+      - name: Check and publish packages
         run: |
-          cd design-system/themes/default
-          bunx jsr publish
+          # Функция для проверки и публикации пакета
+          check_and_publish() {
+            local package_path="$1"
+            local package_name=$(jq -r '.name' "$package_path/jsr.json")
+            local package_version=$(jq -r '.version' "$package_path/jsr.json")
+
+            echo "Checking package: $package_name@$package_version"
+
+            # Проверяем, существует ли уже такая версия
+            if bunx jsr info "$package_name@$package_version" >/dev/null 2>&1; then
+              echo "Version $package_version for $package_name already exists, skipping..."
+              return 0
+            fi
+
+            echo "Publishing $package_name@$package_version..."
+            cd "$package_path"
+            bunx jsr publish
+            cd - >/dev/null
+          }
+
+          # Находим все пакеты с jsr.json
+          find . -name "jsr.json" -type f | while read -r jsr_file; do
+            package_dir=$(dirname "$jsr_file")
+            check_and_publish "$package_dir"
+          done
