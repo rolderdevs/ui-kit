@@ -28,11 +28,6 @@ jobs:
       - name: Setup npm authentication
         run: |
           echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
-          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
-          cat ~/.npmrc
-          cat .npmrc
-          echo "Current directory: $(pwd)"
-          echo "Home directory: $HOME"
 
       - name: Install dependencies
         run: bun install --frozen-lockfile
@@ -40,14 +35,10 @@ jobs:
       - name: Publish theme-default package
         run: |
           cd design-system/themes/default
-          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
-          cat .npmrc
-          echo "Current directory: $(pwd)"
-          ls -la
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
-            bun publish --dry-run
+            bun publish --dry-run --access public
           else
-            bun publish
+            bun publish --access public
           fi
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
