@@ -24,6 +24,8 @@ jobs:
         uses: oven-sh/setup-bun@v2
         with:
           bun-version: latest
+          registries: |
+            https://registry.npmjs.org/|$NPM_TOKEN
 
       - name: Install dependencies
         run: bun install --frozen-lockfile
@@ -37,4 +39,4 @@ jobs:
             bun publish
           fi
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
