@@ -24,7 +24,7 @@ jobs:
         uses: oven-sh/setup-bun@v2
         with:
           bun-version: latest
-          registry-url: https://npm.pkg.github.com
+          registry-url: https://npm.pkg.github.com/rolderdevs/ui-kit.git
           scope: "@rolder"
 
       - name: Install dependencies
