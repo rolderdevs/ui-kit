@@ -519,16 +519,22 @@
     --breakpoints-lg: 1024px;
     --breakpoints-xl: 1280px;
     --breakpoints-2xl: 1536px;
-    --colors-text: var(--colors-gray-900);
-    --colors-text-bright: var(--colors-gray-950);
-    --colors-text-muted: var(--colors-gray-500);
+    --colors-fg: var(--colors-brand-500);
+    --colors-fg-hover: var(--colors-brand-700);
+    --colors-fg-muted: var(--colors-gray-200);
+    --colors-fg-secondary: var(--colors-gray-200);
+    --colors-fg-secondary-hover: var(--colors-gray-300);
+    --colors-fg-secondary-muted: var(--colors-gray-200);
     --colors-bg: var(--colors-gray-100);
     --colors-bg-bright: var(--colors-gray-50);
     --colors-bg-brighter: var(--colors-white);
+    --colors-text: var(--colors-gray-900);
+    --colors-text-bright: var(--colors-gray-950);
+    --colors-text-muted: var(--colors-gray-500);
     --colors-border: var(--colors-gray-200);
     --colors-border-hover: var(--colors-gray-400);
     --colors-icon: var(--colors-gray-900);
-    --colors-icon-disabled: var(--colors-gray-400);
+    --colors-icon-muted: var(--colors-gray-400);
     --colors-error: var(--colors-red-apple-500);
     --colors-error-bg: var(--colors-red-apple-100);
     --colors-warning: var(--colors-orange-500);
@@ -604,16 +610,22 @@
 
   @media (prefers-color-scheme: dark) {
     :where(:root, :host) {
-      --colors-text: var(--colors-stone-200);
-      --colors-text-bright: var(--colors-stone-200);
-      --colors-text-muted: var(--colors-stone-500);
+      --colors-fg: var(--colors-amber-700);
+      --colors-fg-hover: var(--colors-amber-800);
+      --colors-fg-muted: var(--colors-stone-800);
+      --colors-fg-secondary: var(--colors-stone-800);
+      --colors-fg-secondary-hover: var(--colors-stone-700);
+      --colors-fg-secondary-muted: var(--colors-stone-800);
       --colors-bg: var(--colors-stone-950);
       --colors-bg-bright: var(--colors-stone-900);
       --colors-bg-brighter: var(--colors-stone-800);
+      --colors-text: var(--colors-stone-200);
+      --colors-text-bright: var(--colors-stone-200);
+      --colors-text-muted: var(--colors-stone-500);
       --colors-border: var(--colors-stone-700);
       --colors-border-hover: var(--colors-stone-600);
       --colors-icon: var(--colors-stone-200);
-      --colors-icon-disabled: var(--colors-stone-600);
+      --colors-icon-muted: var(--colors-stone-600);
       --colors-error: var(--colors-red-apple-800);
       --colors-error-bg: color-mix(in srgb, var(--colors-red-apple-900) 30%, transparent);
       --colors-warning: var(--colors-orange-800);

@@ -1,0 +1,18 @@
+id: "ds/showcase-react"
+
+tags:
+  - showcase-react
+
+project:
+  name: "Showcase for React"
+  description: "Rolder UI Kit showcase for React"
+
+tasks:
+  check:
+    command: "biome check --write"
+    inputs:
+      - "./src/**/*"
+  dev:
+    command: "rsbuild dev"
+  prepare:
+    command: "panda codegen"

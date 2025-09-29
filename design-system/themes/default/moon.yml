@@ -1,0 +1,14 @@
+id: "ds/theme-default"
+
+project:
+  name: "Default Rolder theme"
+  description: "Default Rolder theme"
+
+tasks:
+  check:
+    command: "biome check --write"
+    inputs:
+      - "./"
+  publish:
+    command: "bun publish"
+    local: true

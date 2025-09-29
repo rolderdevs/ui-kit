@@ -1,0 +1,16 @@
+id: "apps/simple-chat-backend"
+
+tags:
+  - simple-chat
+
+project:
+  name: "Simple Chat Backend"
+  description: "Simple Chat Backend"
+
+tasks:
+  check:
+    command: "biome check --write ."
+    inputs:
+      - "./index.ts"
+  dev:
+    command: "bun --watch index.ts"
