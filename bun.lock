@@ -25,15 +25,15 @@
       "name": "simple-chat-frontend",
       "version": "0.1.0",
       "dependencies": {
-        "@rolder/ui-kit-react": "workspace:*",
+        "@rolder/ui-kit-react": "latest",
         "react": "^19.1.1",
         "react-dom": "^19.1.1",
       },
       "devDependencies": {
         "@pandacss/dev": "^1.4.0",
-        "@rolder/preset-default": "workspace:*",
-        "@rolder/ss-react": "workspace:*",
-        "@rolder/theme-default": "workspace:*",
+        "@rolder/preset-default": "latest",
+        "@rolder/ss-react": "latest",
+        "@rolder/theme-default": "latest",
         "@rsbuild/core": "^1.5.6",
         "@rsbuild/plugin-react": "^1.4.0",
         "@types/react": "^19.1.13",
@@ -43,7 +43,7 @@
     },
     "design-system/elements/react": {
       "name": "@rolder/ui-kit-react",
-      "version": "3.0.0-1",
+      "version": "3.0.0-2",
       "devDependencies": {
         "@pandacss/dev": "^1.4.0",
         "@rolder/ss-react": "workspace:*",
@@ -57,7 +57,7 @@
         "react-dom": "^19.1.1",
       },
     },
-    "design-system/elements/showcase": {
+    "design-system/elements/showcase/react": {
       "name": "rolder-ui-kit-react-showcase",
       "version": "1.0.0",
       "dependencies": {
@@ -580,7 +580,7 @@
 
     "reusify": ["reusify@1.1.0", "", {}, "sha512-g6QUff04oZpHs0eG5p83rFLhHeV00ug/Yf9nZM6fLeUrPguBTkTQOdpAWWspMh55TZfVQDPaN3NQJfbVRAxdIw=="],
 
-    "rolder-ui-kit-react-showcase": ["rolder-ui-kit-react-showcase@workspace:design-system/elements/showcase"],
+    "rolder-ui-kit-react-showcase": ["rolder-ui-kit-react-showcase@workspace:design-system/elements/showcase/react"],
 
     "rsbuild-plugin-dts": ["rsbuild-plugin-dts@0.14.0", "", { "dependencies": { "@ast-grep/napi": "0.37.0" }, "peerDependencies": { "@microsoft/api-extractor": "^7", "@rsbuild/core": "1.x", "@typescript/native-preview": "7.x", "typescript": "^5" }, "optionalPeers": ["@microsoft/api-extractor", "@typescript/native-preview", "typescript"] }, "sha512-PHnixNk1mLYEa5VFz3cx9AvqCuU8I+FlENpl2AY2X0E9kND7ZIAmZKhzArIT6KLSJLpiYp3ZNnXyBGpGP7KJmQ=="],
 
@@ -645,6 +645,14 @@
     "fast-glob/glob-parent": ["glob-parent@5.1.2", "", { "dependencies": { "is-glob": "^4.0.1" } }, "sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow=="],
 
     "micromatch/picomatch": ["picomatch@2.3.1", "", {}, "sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA=="],
+
+    "simple-chat-frontend/@rolder/preset-default": ["@rolder/preset-default@0.1.0-1", "", {}, "sha512-MyJUXsnTG5tE56mEZ4c7dZ49MkmGXGXjnjkPkNQfshwOp/8E8p1Hq9zf6wAQyowdR9vOTEbIF7Xn/36eVuLk/g=="],
+
+    "simple-chat-frontend/@rolder/ss-react": ["@rolder/ss-react@0.1.0-1", "", {}, "sha512-JqZJ488x2SP86OQRoPIkHHNFnXgPnB+TbqSAgvmfk1LoFLkFpqYfougMIn/zFeydmLYlsmyZhOSGSysOSpYInw=="],
+
+    "simple-chat-frontend/@rolder/theme-default": ["@rolder/theme-default@0.1.0-0", "", {}, "sha512-yrZRN98DSjIvhWL5CPMs/WgQb01auMC6OPqEceAiFnJB/9BioR5db3P33+CIbFcdpheow+dvm8jujcKuXM7zCA=="],
+
+    "simple-chat-frontend/@rolder/ui-kit-react": ["@rolder/ui-kit-react@3.0.0-2", "", { "peerDependencies": { "react": "^19.1.1", "react-dom": "^19.1.1" } }, "sha512-BZDn2/Vx2VIlIA4lrTeL/4D63buquhnuVsvkUSPooV1UMDQPBTsIjXL301nTUX4hrxKGc7XRHw96H8mZAMmETw=="],
 
     "update-browserslist-db/escalade": ["escalade@3.2.0", "", {}, "sha512-WUj2qlxaQtO4g6Pq5c29GTcWGDyd8itL8zTlipgECz3JesAiiOKotd8JU6otB3PACgG6xkJUyVhboMS+bje/jA=="],
 
