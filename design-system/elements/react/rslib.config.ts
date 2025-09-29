@@ -12,18 +12,12 @@ export default defineConfig({
       bundle: false,
       dts: true,
       format: 'esm',
-      autoExternal: {
-        dependencies: true,
-        optionalDependencies: true,
-        peerDependencies: true,
-        devDependencies: false,
-      },
     },
   ],
   output: {
     target: 'web',
     externals: ['react', 'react-dom', '@rolder/ss-react'],
-    emitCss: true,
+    // emitCss: true,
   },
   plugins: [pluginReact()],
 });

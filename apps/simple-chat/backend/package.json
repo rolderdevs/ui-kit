@@ -1,21 +1,20 @@
 {
-	"name": "simple-chat-backend",
-	"version": "v0.1.0",
-	"private": true,
-	"type": "module",
-	"module": "index.js",
-	"scripts": {
-		"dev": "bun --watch index.ts",
-		"start": "bun index.ts"
-	},
-	"dependencies": {
-		"@elysiajs/cors": "^1.4.0",
-		"@openrouter/ai-sdk-provider": "^1.2.0",
-		"ai": "^5.0.57",
-		"elysia": "^1.4.8"
-	},
-	"devDependencies": {
-		"@types/bun": "^1.2.23",
-		"typescript": "^5.9.2"
-	}
+  "name": "simple-chat-backend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "module": "index.js",
+  "scripts": {
+    "start": "bun index.ts"
+  },
+  "dependencies": {
+    "@elysiajs/cors": "^1.4.0",
+    "@openrouter/ai-sdk-provider": "^1.2.0",
+    "ai": "^5.0.57",
+    "elysia": "^1.4.8"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.2.23",
+    "typescript": "^5.9.2"
+  }
 }

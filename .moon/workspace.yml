@@ -2,6 +2,7 @@ $schema: "./cache/schemas/workspace.json"
 
 projects:
   - "design-system/**/moon.yml"
+  - "apps/**/moon.yml"
 vcs:
   manager: "git"
   defaultBranch: "main"

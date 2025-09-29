@@ -21,9 +21,29 @@
         "typescript": "^5.9.2",
       },
     },
+    "apps/simple-chat/frontend": {
+      "name": "simple-chat-frontend",
+      "version": "0.1.0",
+      "dependencies": {
+        "@rolder/ui-kit-react": "workspace:*",
+        "react": "^19.1.1",
+        "react-dom": "^19.1.1",
+      },
+      "devDependencies": {
+        "@pandacss/dev": "^1.4.0",
+        "@rolder/preset-default": "workspace:*",
+        "@rolder/ss-react": "workspace:*",
+        "@rolder/theme-default": "workspace:*",
+        "@rsbuild/core": "^1.5.6",
+        "@rsbuild/plugin-react": "^1.4.0",
+        "@types/react": "^19.1.13",
+        "@types/react-dom": "^19.1.9",
+        "typescript": "^5.9.2",
+      },
+    },
     "design-system/elements/react": {
       "name": "@rolder/ui-kit-react",
-      "version": "3.0.0",
+      "version": "3.0.0-1",
       "devDependencies": {
         "@pandacss/dev": "^1.4.0",
         "@rolder/ss-react": "workspace:*",
@@ -59,14 +79,14 @@
     },
     "design-system/presets/default": {
       "name": "@rolder/preset-default",
-      "version": "0.1.0",
+      "version": "0.1.0-1",
       "devDependencies": {
         "@pandacss/dev": "^1.4.0",
       },
     },
     "design-system/styled-system/react": {
       "name": "@rolder/ss-react",
-      "version": "0.1.0",
+      "version": "0.1.0-1",
       "devDependencies": {
         "@pandacss/dev": "^1.4.0",
         "@rolder/preset-default": "workspace:*",
@@ -75,7 +95,7 @@
     },
     "design-system/themes/default": {
       "name": "@rolder/theme-default",
-      "version": "0.1.0",
+      "version": "0.1.0-0",
       "devDependencies": {
         "@pandacss/dev": "^1.4.0",
       },
@@ -569,6 +589,8 @@
     "scheduler": ["scheduler@0.26.0", "", {}, "sha512-NlHwttCI/l5gCPR3D1nNXtWABUmBwvZpEQiD4IXSbIDq8BzLIK/7Ir5gTFSGZDUu37K5cMNp0hFtzO38sC7gWA=="],
 
     "simple-chat-backend": ["simple-chat-backend@workspace:apps/simple-chat/backend"],
+
+    "simple-chat-frontend": ["simple-chat-frontend@workspace:apps/simple-chat/frontend"],
 
     "sisteransi": ["sisteransi@1.0.5", "", {}, "sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg=="],
 

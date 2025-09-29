@@ -3,8 +3,10 @@ import preset from '@rolder/preset-default';
 import theme from '@rolder/theme-default';
 
 export default defineConfig({
-  preflight: false,
-  jsxFramework: 'react',
+  preflight: true,
+  include: ['@rolder/ui-kit-react/src/**/*.tsx', './src/**/*.{js,jsx,ts,tsx}'],
   presets: ['@pandacss/dev/presets', preset, theme],
-  outdir: '.',
+  importMap: '@rolder/ss-react',
+  jsxFramework: 'react',
+  outdir: 'styled-system',
 });

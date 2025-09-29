@@ -8,7 +8,7 @@ tasks:
   build:
     command: "panda && bun panda codegen"
     outputs:
-      - "./"
+      - "./*"
   publish:
     command: "bun publish"
     local: true

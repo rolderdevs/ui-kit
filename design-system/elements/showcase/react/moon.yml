@@ -1,5 +1,8 @@
 id: "ds/showcase-react"
 
+tags:
+  - showcase-react
+
 project:
   name: "Showcase for React"
   description: "Rolder UI Kit showcase for React"
