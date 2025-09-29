@@ -9,7 +9,7 @@ export default defineConfig({
   },
   lib: [
     {
-      bundle: true,
+      bundle: false,
       dts: true,
       format: 'esm',
       autoExternal: {

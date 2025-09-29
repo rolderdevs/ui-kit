@@ -8,4 +8,10 @@ tasks:
   check:
     command: "biome check --write"
     inputs:
-      - "./"
+      - "./src/**/*"
+  build:
+    command: "rslib build"
+    inputs:
+      - "./src/**/*"
+    outputs:
+      - "./dist"

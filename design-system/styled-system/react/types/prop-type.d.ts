@@ -203,7 +203,7 @@ export interface UtilityValues {
 	srOnly: boolean;
 	debug: boolean;
 	containerName: CssProperties["containerName"];
-	colorPalette: "current" | "black" | "white" | "transparent" | "rose" | "pink" | "fuchsia" | "purple" | "violet" | "indigo" | "sky" | "cyan" | "teal" | "emerald" | "green" | "lime" | "yellow" | "amber" | "red" | "neutral" | "stone" | "zinc" | "slate" | "gray" | "brand" | "redApple" | "orange" | "mint" | "blue" | "text" | "bg" | "border" | "icon" | "error" | "warning" | "success" | "info";
+	colorPalette: "current" | "black" | "white" | "transparent" | "rose" | "pink" | "fuchsia" | "purple" | "violet" | "indigo" | "sky" | "cyan" | "teal" | "emerald" | "green" | "lime" | "yellow" | "amber" | "red" | "neutral" | "stone" | "zinc" | "slate" | "gray" | "brand" | "redApple" | "orange" | "mint" | "blue" | "fg" | "fg.secondary" | "bg" | "text" | "border" | "icon" | "error" | "warning" | "success" | "info";
 	textStyle: "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | "3xl" | "4xl" | "5xl" | "6xl" | "7xl" | "8xl" | "9xl" | "h3" | "p2" | "p3" | "p4";
 }
 

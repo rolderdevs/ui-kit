@@ -8,5 +8,8 @@ tasks:
   check:
     command: "biome check --write"
     inputs:
-      - "./src"
-      - "./*.ts"
+      - "./src/**/*"
+  dev:
+    command: "rsbuild dev"
+  prepare:
+    command: "panda codegen"

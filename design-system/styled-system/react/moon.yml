@@ -3,3 +3,9 @@ id: "ds/ss-react"
 project:
   name: "Styled system for React"
   description: "Styled system for React"
+
+tasks:
+  build:
+    command: "panda && bun panda codegen"
+    outputs:
+      - "./"
