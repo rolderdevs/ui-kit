@@ -9,3 +9,6 @@ tasks:
     command: "biome check --write"
     inputs:
       - "./"
+  publish:
+    command: "bun publish"
+    local: true

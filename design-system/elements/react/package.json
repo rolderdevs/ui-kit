@@ -1,7 +1,7 @@
 {
   "name": "@rolder/ui-kit-react",
   "description": "Rolder UI Kit for React",
-  "version": "3.0.0",
+  "version": "3.0.0-1",
   "type": "module",
   "module": "./src/index.ts",
   "types": "./src/index.ts",

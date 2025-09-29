@@ -15,3 +15,6 @@ tasks:
       - "./src/**/*"
     outputs:
       - "./dist"
+  publish:
+    command: "bun publish"
+    local: true
