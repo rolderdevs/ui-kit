@@ -1,0 +1,11 @@
+id: "ds/kit-react"
+
+project:
+  name: "Rolder UI Kit for React"
+  description: "Rolder UI Kit for React"
+
+tasks:
+  check:
+    command: "biome check --write"
+    inputs:
+      - "./"

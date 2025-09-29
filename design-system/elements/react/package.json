@@ -1,37 +1,38 @@
 {
-	"name": "@rolder/ui-kit-react",
-	"version": "3.0.0",
-	"type": "module",
-	"module": "./index.ts",
-	"types": "./index.ts",
-	"exports": {
-		"types": "./index.ts",
-		"import": "./index.ts"
-	},
-	"files": [
-		"dist"
-	],
-	"scripts": {
-		"build": "rslib build && bun run build:panda-ship",
-		"build:panda-ship": "bun panda ship --outfile dist/panda.buildinfo.json",
-		"dev": "rslib build --watch",
-		"bump": "echo '\n=== Bump UI-Kit React ===' && bunx bumpp --no-tag",
-		"release": "bun run bump && bun scripts/publish.js"
-	},
-	"dependencies": {},
-	"devDependencies": {
-		"@rolder/ss-react": "workspace:*",
-		"@pandacss/dev": "^1.4.0",
-		"@rsbuild/core": "~1.5.12",
-		"@rsbuild/plugin-react": "^1.4.1",
-		"@rslib/core": "^0.14.0",
-		"@types/react": "^19.1.15"
-	},
-	"peerDependencies": {
-		"react": "^19.1.1",
-		"react-dom": "^19.1.1"
-	},
-	"publishConfig": {
-		"access": "public"
-	}
+  "name": "@rolder/ui-kit-react",
+  "description": "Rolder UI Kit for React",
+  "version": "3.0.0",
+  "type": "module",
+  "module": "./index.ts",
+  "types": "./index.ts",
+  "exports": {
+    "types": "./index.ts",
+    "import": "./index.ts"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rslib build && bun run build:panda-ship",
+    "build:panda-ship": "bun panda ship --outfile dist/panda.buildinfo.json",
+    "dev": "rslib build --watch",
+    "bump": "echo '\n=== Bump UI-Kit React ===' && bunx bumpp --no-tag",
+    "release": "bun run bump && bun scripts/publish.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@rolder/ss-react": "workspace:*",
+    "@pandacss/dev": "^1.4.0",
+    "@rsbuild/core": "~1.5.13",
+    "@rsbuild/plugin-react": "^1.4.1",
+    "@rslib/core": "^0.14.0",
+    "@types/react": "^19.1.15"
+  },
+  "peerDependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }

@@ -4,6 +4,9 @@
 		"design-system/**",
 		"apps/**"
 	],
+	"devDependencies": {
+		"@biomejs/biome": "2.2.4"
+	},
 	"trustedDependencies": [
 		"core-js",
 		"esbuild"

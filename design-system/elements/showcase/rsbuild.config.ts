@@ -1,7 +1,7 @@
-import { defineConfig } from "@rsbuild/core";
-import { pluginReact } from "@rsbuild/plugin-react";
+import { defineConfig } from '@rsbuild/core';
+import { pluginReact } from '@rsbuild/plugin-react';
 
 export default defineConfig({
-	plugins: [pluginReact()],
-	html: { title: "Rolder UI Kit Showcase" },
+  plugins: [pluginReact()],
+  html: { title: 'Rolder UI Kit Showcase' },
 });

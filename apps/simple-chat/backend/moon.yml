@@ -1,0 +1,11 @@
+id: "apps/simple-chat-backend"
+
+project:
+  name: "Simple Chat Backend"
+  description: "Simple Chat Backend"
+
+tasks:
+  check:
+    command: "biome check --write"
+    inputs:
+      - "./*.ts"

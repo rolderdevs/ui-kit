@@ -1,0 +1,11 @@
+id: "ds/preset-default"
+
+project:
+  name: "Default Rolder preset"
+  description: "Default Rolder preset"
+
+tasks:
+  check:
+    command: "biome check --write"
+    inputs:
+      - "./"
