@@ -21,6 +21,7 @@ export const treeView = defineSlotRecipe({
       userSelect: 'none',
       cursor: 'pointer',
       ring: 'none',
+      transition: 'color 0.2s ease-in-out, background-color 0.2s ease-in-out',
       paddingInlineStart:
         'calc((var(--depth) - 1) * var(--tree-indent-size, 24px) + var(--tree-base-offset, 16px))',
       '&[data-depth="1"]': {
@@ -42,6 +43,7 @@ export const treeView = defineSlotRecipe({
       userSelect: 'none',
       cursor: 'pointer',
       ring: 'none',
+      transition: 'background-color 0.2s ease-in-out',
       paddingInlineStart:
         'calc((var(--depth) - 1) * var(--tree-indent-size, 24px) + var(--tree-base-offset, 16px))',
       '&[data-depth="1"]': {
@@ -98,6 +100,7 @@ export const treeView = defineSlotRecipe({
       cursor: 'pointer',
       userSelect: 'none',
       ring: 'none',
+      transition: 'color 0.2s ease-in-out, background-color 0.2s ease-in-out',
       paddingInlineStart:
         'calc((var(--depth) * var(--tree-indent-size, 24px)) + var(--tree-indent-size, 24px))',
       _selected: {
