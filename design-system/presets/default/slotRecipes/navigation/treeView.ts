@@ -10,6 +10,7 @@ export const treeView = defineSlotRecipe({
       display: 'flex',
       flexDirection: 'column',
       textStyle: 'p4',
+      ring: 'none',
     },
     branchControl: {
       display: 'flex',
@@ -27,6 +28,24 @@ export const treeView = defineSlotRecipe({
       },
       _selected: {
         color: 'fg',
+      },
+      _hover: {
+        bg: 'fg.secondary.muted',
+      },
+    },
+    branchTrigger: {
+      display: 'flex',
+      alignItems: 'center',
+      paddingBlock: 1.5,
+      gap: 2,
+      rounded: 'sm',
+      userSelect: 'none',
+      cursor: 'pointer',
+      ring: 'none',
+      paddingInlineStart:
+        'calc((var(--depth) - 1) * var(--tree-indent-size, 24px) + var(--tree-base-offset, 16px))',
+      '&[data-depth="1"]': {
+        paddingInlineStart: 'var(--tree-base-offset, 16px)',
       },
       _hover: {
         bg: 'fg.secondary.muted',

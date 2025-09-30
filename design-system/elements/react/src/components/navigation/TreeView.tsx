@@ -31,7 +31,7 @@ const Label = styled(TreeViewLabel);
 const StyledTree = styled(TreeViewTree);
 const Branch = styled(TreeViewBranch);
 const StyledBranchControl = styled(TreeViewBranchControl);
-const BranchTrigger = styled(TreeViewBranchTrigger);
+const StyledBranchTrigger = styled(TreeViewBranchTrigger);
 const StyledBranchIndicator = styled(TreeViewBranchIndicator);
 const StyledBranchText = styled(TreeViewBranchText);
 const StyledBranchContent = styled(TreeViewBranchContent);
@@ -87,6 +87,18 @@ const BranchControl = ({
   return (
     <StyledBranchControl
       className={cx(treeView().branchControl, className)}
+      {...props}
+    />
+  );
+};
+
+const BranchTrigger = ({
+  className,
+  ...props
+}: ComponentProps<typeof StyledBranchTrigger>) => {
+  return (
+    <StyledBranchTrigger
+      className={cx(treeView().branchTrigger, className)}
       {...props}
     />
   );

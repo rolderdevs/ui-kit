@@ -8,7 +8,7 @@ import { IconChevronRight, IconFile, IconFolder } from '@tabler/icons-react';
 
 const App = () => {
   return (
-    <TreeView<Node> collection={collection} m={4}>
+    <TreeView<Node> collection={collection} m={4} selectionMode="single">
       <TreeView.Label>Tree</TreeView.Label>
       <TreeView.Tree>
         {collection.rootNode.children?.map((node, index) => (
@@ -25,14 +25,14 @@ const TreeNode = (props: NodeProviderProps<Node>) => {
     <TreeView.NodeProvider key={node.id} node={node} indexPath={indexPath}>
       {node.children ? (
         <TreeView.Branch>
-          <TreeView.BranchControl>
+          <TreeView.BranchTrigger>
             <TreeView.BranchIndicator>
               <IconChevronRight />
             </TreeView.BranchIndicator>
             <TreeView.BranchText>
               <IconFolder /> {node.name}
             </TreeView.BranchText>
-          </TreeView.BranchControl>
+          </TreeView.BranchTrigger>
           <TreeView.BranchContent>
             <TreeView.BranchIndentGuide />
             {node.children.map((child, index) => (
