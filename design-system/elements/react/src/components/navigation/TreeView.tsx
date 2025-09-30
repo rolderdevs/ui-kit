@@ -20,6 +20,7 @@ import {
   type TreeViewRootProps,
   TreeViewRootProvider,
   TreeViewTree,
+  useTreeViewNodeContext,
 } from '@ark-ui/react/tree-view';
 import { cx } from '@rolder/ss-react/css';
 import { styled } from '@rolder/ss-react/jsx';
@@ -43,35 +44,29 @@ const NodeCheckbox = styled(TreeViewNodeCheckbox);
 const NodeCheckboxIndicator = styled(TreeViewNodeCheckboxIndicator);
 
 interface TreeProps {
-  indentSize?: string;
-  baseOffset?: string;
-  iconSize?: string;
+  rootOffset?: string;
+  depthOffset?: string;
 }
 
 const Root = <T extends TreeNode = TreeNode>({
   className,
-  indentSize = '24px',
-  baseOffset = '16px',
-  iconSize = '24px',
+  rootOffset = '22px',
+  depthOffset = '24px',
   ...props
 }: TreeViewRootProps<T> &
   TreeProps &
   Omit<ComponentProps<typeof StyledRoot>, 'collection'>) => {
-  // Автоматически вычисляем позицию линии (базовый отступ + половина размера иконки)
-  const guideOffset = `calc(${baseOffset} + ${iconSize} / 2)`;
-
   return (
-    <TreeViewRoot<T>
+    <StyledRoot
       className={cx(treeView().root, className)}
       style={
         {
-          '--tree-indent-size': indentSize,
-          '--tree-base-offset': baseOffset,
-          '--tree-guide-offset': guideOffset,
+          '--root-offset': rootOffset,
+          '--depth-offset': depthOffset,
           ...props.style,
         } as React.CSSProperties
       }
-      {...props}
+      {...(props as ComponentProps<typeof StyledRoot>)}
     />
   );
 };
@@ -96,9 +91,14 @@ const BranchTrigger = ({
   className,
   ...props
 }: ComponentProps<typeof StyledBranchTrigger>) => {
+  const nodeContext = useTreeViewNodeContext();
+
   return (
     <StyledBranchTrigger
       className={cx(treeView().branchTrigger, className)}
+      // Workaround: Zag.js bug - BranchTrigger doesn't include data-depth unlike BranchControl
+      // This manually adds the depth attribute needed for CSS styling
+      data-depth={nodeContext.depth}
       {...props}
     />
   );
@@ -165,7 +165,7 @@ const ItemText = ({
   );
 };
 
-const TreeViewComponent = <T extends TreeNode = TreeNode>(
+const RootComponent = <T extends TreeNode = TreeNode>(
   props: TreeViewRootProps<T> &
     TreeProps &
     Omit<ComponentProps<typeof StyledRoot>, 'collection'>,
@@ -173,7 +173,7 @@ const TreeViewComponent = <T extends TreeNode = TreeNode>(
   return Root<T>(props);
 };
 
-export const TreeView = Object.assign(TreeViewComponent, {
+export const TreeView = Object.assign(RootComponent, {
   Label,
   Tree,
   Branch,

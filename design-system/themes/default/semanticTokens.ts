@@ -12,13 +12,13 @@ export default defineSemanticTokens({
       bright: {
         value: {
           base: '{colors.brand.700}',
-          _osDark: '{colors.amber.800}',
+          _osDark: '{colors.amber.600}',
         },
       },
       muted: {
         value: {
           base: '{colors.gray.200}',
-          _osDark: '{colors.stone.800}',
+          _osDark: '{colors.amber.900}',
         },
       },
       secondary: {
@@ -79,6 +79,12 @@ export default defineSemanticTokens({
         value: {
           base: '{colors.gray.500}',
           _osDark: '{colors.stone.500}',
+        },
+      },
+      inverted: {
+        value: {
+          base: '{colors.gray.100}',
+          _osDark: '{colors.stone.100}',
         },
       },
     },

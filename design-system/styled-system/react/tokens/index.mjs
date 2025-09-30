@@ -1907,6 +1907,10 @@ const tokens = {
     "value": "var(--colors-text-muted)",
     "variable": "var(--colors-text-muted)"
   },
+  "colors.text.inverted": {
+    "value": "var(--colors-text-inverted)",
+    "variable": "var(--colors-text-inverted)"
+  },
   "colors.border": {
     "value": "var(--colors-border)",
     "variable": "var(--colors-border)"
@@ -2166,6 +2170,10 @@ const tokens = {
   "colors.colorPalette.brighter": {
     "value": "var(--colors-color-palette-brighter)",
     "variable": "var(--colors-color-palette-brighter)"
+  },
+  "colors.colorPalette.inverted": {
+    "value": "var(--colors-color-palette-inverted)",
+    "variable": "var(--colors-color-palette-inverted)"
   },
   "colors.colorPalette.hover": {
     "value": "var(--colors-color-palette-hover)",

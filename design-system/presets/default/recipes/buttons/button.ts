@@ -23,7 +23,7 @@ export const button = defineRecipe({
     variant: {
       primary: {
         bg: 'fg',
-        color: 'text',
+        color: 'text.inverted',
         _hover: {
           bg: 'fg.bright',
         },

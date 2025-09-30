@@ -10,6 +10,7 @@ export const treeView = defineSlotRecipe({
       display: 'flex',
       flexDirection: 'column',
       textStyle: 'p4',
+      fontWeight: '500',
       ring: 'none',
     },
     branchControl: {
@@ -17,51 +18,43 @@ export const treeView = defineSlotRecipe({
       alignItems: 'center',
       paddingBlock: 1.5,
       gap: 2,
+      px: 3,
+      py: 2,
       rounded: 'sm',
       userSelect: 'none',
       cursor: 'pointer',
       ring: 'none',
-      transition: 'color 0.2s ease-in-out, background-color 0.2s ease-in-out',
-      paddingInlineStart:
-        'calc((var(--depth) - 1) * var(--tree-indent-size, 24px) + var(--tree-base-offset, 16px))',
-      '&[data-depth="1"]': {
-        paddingInlineStart: 'var(--tree-base-offset, 16px)',
-      },
+      transition: 'color 0.1s ease-in-out, background-color 0.1s ease-in-out',
+      paddingInlineStart: 'calc((var(--depth) - 1) * var(--depth-offset))',
       _selected: {
-        color: 'fg',
+        bg: 'fg.secondary',
       },
       _hover: {
-        bg: 'fg.secondary.muted',
+        bg: 'fg.secondary.bright',
       },
     },
     branchTrigger: {
       display: 'flex',
       alignItems: 'center',
-      paddingBlock: 1.5,
       gap: 2,
       rounded: 'sm',
       userSelect: 'none',
       cursor: 'pointer',
       ring: 'none',
-      transition: 'background-color 0.2s ease-in-out',
-      paddingInlineStart:
-        'calc((var(--depth) - 1) * var(--tree-indent-size, 24px) + var(--tree-base-offset, 16px))',
-      '&[data-depth="1"]': {
-        paddingInlineStart: 'var(--tree-base-offset, 16px)',
-      },
+      transition: 'background-color 0.1s ease-in-out',
+      paddingInlineStart: 'calc((var(--depth) - 1) * var(--depth-offset))',
       _hover: {
-        bg: 'fg.secondary.muted',
+        bg: 'fg.secondary.bright',
       },
     },
     branchIndicator: {
+      mr: 2.5,
       '&[data-state=open]': {
         transition: 'transform 0.2s',
-        transformOrigin: 'center',
         transform: 'rotate(90deg)',
       },
       '&[data-state=closed]': {
         transition: 'transform 0.2s',
-        transformOrigin: 'center',
         transform: 'rotate(0deg)',
       },
     },
@@ -69,6 +62,8 @@ export const treeView = defineSlotRecipe({
       display: 'flex',
       alignItems: 'center',
       gap: 2,
+      px: 2.5,
+      py: 1.5,
     },
     branchContent: {
       pos: 'relative',
@@ -85,35 +80,33 @@ export const treeView = defineSlotRecipe({
       w: '1px',
       h: 'full',
       bg: 'border',
-      left: 'calc((var(--depth) - 1) * var(--tree-indent-size, 24px) + var(--tree-guide-offset, 28px))',
-      '&[data-depth="1"]': {
-        left: 'var(--tree-guide-offset, 28px)',
-      },
+      zIndex: 1,
+      left: 'calc(((var(--depth) - 1) * var(--depth-offset)) + var(--root-offset))',
     },
     item: {
       pos: 'relative',
       display: 'flex',
       alignItems: 'center',
-      paddingBlock: 1.5,
       gap: 2,
       rounded: 'sm',
       cursor: 'pointer',
       userSelect: 'none',
       ring: 'none',
-      transition: 'color 0.2s ease-in-out, background-color 0.2s ease-in-out',
-      paddingInlineStart:
-        'calc((var(--depth) * var(--tree-indent-size, 24px)) + var(--tree-indent-size, 24px))',
+      transition: 'color 0.1s ease-in-out, background-color 0.1s ease-in-out',
+      paddingInlineStart: 'calc((var(--depth) - 1) * var(--depth-offset))',
       _selected: {
-        color: 'fg',
+        bg: 'fg.secondary',
       },
       _hover: {
-        bg: 'fg.secondary.muted',
+        bg: 'fg.secondary.bright',
       },
     },
     itemText: {
       display: 'flex',
       alignItems: 'center',
       gap: 2,
+      px: 2.5,
+      py: 1.5,
     },
   },
 });
