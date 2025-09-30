@@ -9,10 +9,20 @@ project:
 
 tasks:
   check:
-    command: "biome check --write"
+    command: "biome check --write ./src"
     inputs:
       - "./src/**/*"
   dev:
-    command: "rsbuild dev"
+    command: "vite dev"
+    deps:
+      - "ds/ss-react:dev"
   prepare:
     command: "panda codegen"
+  build:
+    command: "vite build"
+    inputs:
+      - "./src/**/*"
+    outputs:
+      - "./dist/**/*"
+    deps:
+      - "prepare"

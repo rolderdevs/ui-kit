@@ -151,7 +151,7 @@ export interface UtilityValues {
 	transitionProperty: "common" | "colors" | "size" | "position" | "background";
 	transition: "all" | "common" | "size" | "position" | "background" | "colors" | "opacity" | "shadow" | "transform";
 	animation: Tokens["animations"];
-	animationName: "spin" | "ping" | "pulse" | "bounce" | "fadeOut" | "slideOutToTop" | "slideInFromTop";
+	animationName: "spin" | "ping" | "pulse" | "bounce" | "collapsibleSlideDown" | "collapsibleSlideUp" | "fadeOut" | "slideOutToTop" | "slideInFromTop";
 	animationTimingFunction: Tokens["easings"];
 	animationDuration: Tokens["durations"];
 	animationDelay: Tokens["durations"];

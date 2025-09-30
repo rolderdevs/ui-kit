@@ -39,7 +39,8 @@
       "!*styled-system*",
       "!dist",
       "!build",
-      "!tmp"
+      "!tmp",
+      "!**/routeTree.gen.ts"
     ]
   }
 }

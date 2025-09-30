@@ -23,9 +23,9 @@ export const button = defineRecipe({
     variant: {
       primary: {
         bg: 'fg',
-        color: 'text',
+        color: 'text.inverted',
         _hover: {
-          bg: 'fg.hover',
+          bg: 'fg.bright',
         },
         _disabled: {
           color: 'text.muted',
@@ -36,7 +36,7 @@ export const button = defineRecipe({
         bg: 'fg.secondary',
         color: 'text',
         _hover: {
-          bg: 'fg.secondary.hover',
+          bg: 'fg.secondary.bright',
         },
         _disabled: {
           color: 'text.muted',

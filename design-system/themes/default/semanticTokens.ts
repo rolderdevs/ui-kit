@@ -9,16 +9,16 @@ export default defineSemanticTokens({
           _osDark: '{colors.amber.700}',
         },
       },
-      hover: {
+      bright: {
         value: {
           base: '{colors.brand.700}',
-          _osDark: '{colors.amber.800}',
+          _osDark: '{colors.amber.600}',
         },
       },
       muted: {
         value: {
           base: '{colors.gray.200}',
-          _osDark: '{colors.stone.800}',
+          _osDark: '{colors.amber.900}',
         },
       },
       secondary: {
@@ -28,16 +28,16 @@ export default defineSemanticTokens({
             _osDark: '{colors.stone.800}',
           },
         },
-        hover: {
+        bright: {
           value: {
-            base: '{colors.gray.300}',
+            base: '{colors.gray.100}',
             _osDark: '{colors.stone.700}',
           },
         },
         muted: {
           value: {
-            base: '{colors.gray.200}',
-            _osDark: '{colors.stone.800}',
+            base: '{colors.gray.300}',
+            _osDark: '{colors.stone.900}',
           },
         },
       },
@@ -79,6 +79,12 @@ export default defineSemanticTokens({
         value: {
           base: '{colors.gray.500}',
           _osDark: '{colors.stone.500}',
+        },
+      },
+      inverted: {
+        value: {
+          base: '{colors.gray.100}',
+          _osDark: '{colors.stone.100}',
         },
       },
     },

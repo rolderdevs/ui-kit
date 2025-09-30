@@ -1863,9 +1863,9 @@ const tokens = {
     "value": "var(--colors-fg)",
     "variable": "var(--colors-fg)"
   },
-  "colors.fg.hover": {
-    "value": "var(--colors-fg-hover)",
-    "variable": "var(--colors-fg-hover)"
+  "colors.fg.bright": {
+    "value": "var(--colors-fg-bright)",
+    "variable": "var(--colors-fg-bright)"
   },
   "colors.fg.muted": {
     "value": "var(--colors-fg-muted)",
@@ -1875,9 +1875,9 @@ const tokens = {
     "value": "var(--colors-fg-secondary)",
     "variable": "var(--colors-fg-secondary)"
   },
-  "colors.fg.secondary.hover": {
-    "value": "var(--colors-fg-secondary-hover)",
-    "variable": "var(--colors-fg-secondary-hover)"
+  "colors.fg.secondary.bright": {
+    "value": "var(--colors-fg-secondary-bright)",
+    "variable": "var(--colors-fg-secondary-bright)"
   },
   "colors.fg.secondary.muted": {
     "value": "var(--colors-fg-secondary-muted)",
@@ -1906,6 +1906,10 @@ const tokens = {
   "colors.text.muted": {
     "value": "var(--colors-text-muted)",
     "variable": "var(--colors-text-muted)"
+  },
+  "colors.text.inverted": {
+    "value": "var(--colors-text-inverted)",
+    "variable": "var(--colors-text-inverted)"
   },
   "colors.border": {
     "value": "var(--colors-border)",
@@ -2143,9 +2147,9 @@ const tokens = {
     "value": "var(--colors-color-palette-950)",
     "variable": "var(--colors-color-palette-950)"
   },
-  "colors.colorPalette.hover": {
-    "value": "var(--colors-color-palette-hover)",
-    "variable": "var(--colors-color-palette-hover)"
+  "colors.colorPalette.bright": {
+    "value": "var(--colors-color-palette-bright)",
+    "variable": "var(--colors-color-palette-bright)"
   },
   "colors.colorPalette.muted": {
     "value": "var(--colors-color-palette-muted)",
@@ -2155,21 +2159,25 @@ const tokens = {
     "value": "var(--colors-color-palette-secondary)",
     "variable": "var(--colors-color-palette-secondary)"
   },
-  "colors.colorPalette.secondary.hover": {
-    "value": "var(--colors-color-palette-secondary-hover)",
-    "variable": "var(--colors-color-palette-secondary-hover)"
+  "colors.colorPalette.secondary.bright": {
+    "value": "var(--colors-color-palette-secondary-bright)",
+    "variable": "var(--colors-color-palette-secondary-bright)"
   },
   "colors.colorPalette.secondary.muted": {
     "value": "var(--colors-color-palette-secondary-muted)",
     "variable": "var(--colors-color-palette-secondary-muted)"
   },
-  "colors.colorPalette.bright": {
-    "value": "var(--colors-color-palette-bright)",
-    "variable": "var(--colors-color-palette-bright)"
-  },
   "colors.colorPalette.brighter": {
     "value": "var(--colors-color-palette-brighter)",
     "variable": "var(--colors-color-palette-brighter)"
+  },
+  "colors.colorPalette.inverted": {
+    "value": "var(--colors-color-palette-inverted)",
+    "variable": "var(--colors-color-palette-inverted)"
+  },
+  "colors.colorPalette.hover": {
+    "value": "var(--colors-color-palette-hover)",
+    "variable": "var(--colors-color-palette-hover)"
   },
   "colors.colorPalette.bg": {
     "value": "var(--colors-color-palette-bg)",

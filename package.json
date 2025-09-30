@@ -1,14 +1,15 @@
 {
-	"name": "ui-kit-workspace",
-	"workspaces": [
-		"design-system/**",
-		"apps/**"
-	],
-	"devDependencies": {
-		"@biomejs/biome": "2.2.4"
-	},
-	"trustedDependencies": [
-		"core-js",
-		"esbuild"
-	]
+  "name": "ui-kit-workspace",
+  "workspaces": [
+    "design-system/**",
+    "apps/**"
+  ],
+  "devDependencies": {
+    "@biomejs/biome": "2.2.4",
+    "@moonrepo/cli": "^1.41.0"
+  },
+  "trustedDependencies": [
+    "core-js",
+    "esbuild"
+  ]
 }
