@@ -40,7 +40,11 @@ const Root = ({
 }: ComponentProps<typeof StyledRoot> & TabsVariantProps) => {
   return (
     <TabsContext.Provider value={{ size }}>
-      <StyledRoot className={cx(tabs({ size }).root, className)} {...props} />
+      <StyledRoot
+        className={cx(tabs({ size }).root, className)}
+        lazyMount
+        {...props}
+      />
     </TabsContext.Provider>
   );
 };
@@ -83,4 +87,5 @@ export const Tabs = Object.assign(Root, {
   Content,
   Provider: TabsRootProvider,
 });
+
 export { useTabs };
