@@ -1,4 +1,4 @@
-import { button } from './button';
+import { button } from './buttons';
 
 export default {
   button,

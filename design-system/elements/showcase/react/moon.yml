@@ -14,5 +14,7 @@ tasks:
       - "./src/**/*"
   dev:
     command: "rsbuild dev"
+    deps:
+      - "ds/ss-react:dev"
   prepare:
     command: "panda codegen"

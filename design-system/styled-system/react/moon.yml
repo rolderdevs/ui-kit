@@ -9,6 +9,8 @@ tasks:
     command: "panda && bun panda codegen"
     outputs:
       - "./*"
+  dev:
+    command: "bun panda codegen -w"
   publish:
     command: "bun publish"
     local: true
