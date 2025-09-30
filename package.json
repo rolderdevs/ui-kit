@@ -2,7 +2,8 @@
   "name": "ui-kit-workspace",
   "workspaces": [
     "design-system/**",
-    "apps/**"
+    "apps/**",
+    "showcase/**"
   ],
   "devDependencies": {
     "@biomejs/biome": "2.2.4",

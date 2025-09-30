@@ -6,6 +6,9 @@
       "bun": {
         "pkg-path": "bun"
       },
+      "moon": {
+        "pkg-path": "moon"
+      },
       "nodejs": {
         "pkg-path": "nodejs"
       }
@@ -130,6 +133,126 @@
       ],
       "outputs": {
         "out": "/nix/store/56kdm47yzczcm1vyiczay3mx6qy1l9a0-bun-1.2.21"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "moon",
+      "broken": false,
+      "derivation": "/nix/store/fhkmilipf7ri3raaj6iwm8vb8bi018s9-moon-1.38.5.drv",
+      "description": "Task runner and repo management tool for the web ecosystem, written in Rust",
+      "install_id": "moon",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=8d4ddb19d03c65a36ad8d189d001dc32ffb0306b",
+      "name": "moon-1.38.5",
+      "pname": "moon",
+      "rev": "8d4ddb19d03c65a36ad8d189d001dc32ffb0306b",
+      "rev_count": 862643,
+      "rev_date": "2025-09-16T15:19:26Z",
+      "scrape_date": "2025-09-19T01:17:02.634616Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.38.5",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/c11rzv2fbvxikjfp3pm10fzxqnzbl079-moon-1.38.5"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "moon",
+      "broken": false,
+      "derivation": "/nix/store/88ffyg6407cyhyi8ybcnbp91ja0b9zpi-moon-1.38.5.drv",
+      "description": "Task runner and repo management tool for the web ecosystem, written in Rust",
+      "install_id": "moon",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=8d4ddb19d03c65a36ad8d189d001dc32ffb0306b",
+      "name": "moon-1.38.5",
+      "pname": "moon",
+      "rev": "8d4ddb19d03c65a36ad8d189d001dc32ffb0306b",
+      "rev_count": 862643,
+      "rev_date": "2025-09-16T15:19:26Z",
+      "scrape_date": "2025-09-19T01:50:00.766516Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.38.5",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/rwkljv8rzyf2scv2hn8c1l4ry9d1i9b1-moon-1.38.5"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "moon",
+      "broken": false,
+      "derivation": "/nix/store/whwlvipbp853irzigx0jlc22ljjpzjr5-moon-1.38.5.drv",
+      "description": "Task runner and repo management tool for the web ecosystem, written in Rust",
+      "install_id": "moon",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=8d4ddb19d03c65a36ad8d189d001dc32ffb0306b",
+      "name": "moon-1.38.5",
+      "pname": "moon",
+      "rev": "8d4ddb19d03c65a36ad8d189d001dc32ffb0306b",
+      "rev_count": 862643,
+      "rev_date": "2025-09-16T15:19:26Z",
+      "scrape_date": "2025-09-19T02:02:12.998572Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.38.5",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/7896wrzbkw2zhkzb1fl3ha7kp5gy30br-moon-1.38.5"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "moon",
+      "broken": false,
+      "derivation": "/nix/store/lk6c000b86h1rswsqw988rk1n6dklrqg-moon-1.38.5.drv",
+      "description": "Task runner and repo management tool for the web ecosystem, written in Rust",
+      "install_id": "moon",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=8d4ddb19d03c65a36ad8d189d001dc32ffb0306b",
+      "name": "moon-1.38.5",
+      "pname": "moon",
+      "rev": "8d4ddb19d03c65a36ad8d189d001dc32ffb0306b",
+      "rev_count": 862643,
+      "rev_date": "2025-09-16T15:19:26Z",
+      "scrape_date": "2025-09-19T02:34:09.066176Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.38.5",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/k42zxwm353la8krszyyiymfzz32vzd61-moon-1.38.5"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
