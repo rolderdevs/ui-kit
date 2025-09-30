@@ -1,7 +1,8 @@
 import { collapsible } from './layout';
-import { tabs } from './navigation';
+import { tabs, treeView } from './navigation';
 
 export default {
   tabs,
   collapsible,
+  treeView,
 };

@@ -28,7 +28,7 @@ const TabsContext = createContext<TabsContextValue | null>(null);
 const useTabsStyles = () => {
   const context = useContext(TabsContext);
   if (!context) {
-    throw new Error('useScrollArea must be used within a ScrollArea');
+    throw new Error('useTabsStyles must be used within a Tabs');
   }
   return context;
 };
