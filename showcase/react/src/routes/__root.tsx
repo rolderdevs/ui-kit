@@ -21,7 +21,10 @@ export const Route = createRootRoute({
       },
       {
         title: 'Rolder UI Kit Showcase for React',
-        description: 'Rolder UI Kit Showcase for React',
+      },
+      {
+        name: 'description',
+        content: 'Rolder UI Kit Showcase for React',
       },
     ],
     links: [
