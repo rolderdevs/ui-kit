@@ -26,3 +26,5 @@ tasks:
       - "./dist/**/*"
     deps:
       - "prepare"
+  start:
+    command: "bun server.ts"

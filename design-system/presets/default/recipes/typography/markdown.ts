@@ -175,6 +175,20 @@ export const markdown = defineRecipe({
       borderTopColor: 'border',
     },
 
+    // Code block theme switching
+    '& [data-code-block]:not(.hidden)': {
+      _dark: {
+        display: 'none',
+      },
+    },
+
+    '& [data-code-block].hidden': {
+      display: 'none',
+      _dark: {
+        display: 'block',
+      },
+    },
+
     // Tables
     '& [data-streamdown="table-wrapper"]': {
       marginY: '4',

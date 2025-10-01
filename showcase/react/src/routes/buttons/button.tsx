@@ -1,6 +1,7 @@
 import { Button, Markdown } from '@rolder/ui-kit-react';
 import { createFileRoute } from '@tanstack/react-router';
 import { Page } from '@/components';
+import description from './description.md';
 
 export const Route = createFileRoute('/buttons/button')({
   component: RouteComponent,
@@ -9,7 +10,7 @@ export const Route = createFileRoute('/buttons/button')({
 function RouteComponent() {
   return (
     <Page title="Button">
-      <Markdown w="full"># Markdown This is a markdown example.</Markdown>
+      <Markdown>{description}</Markdown>
       <Button>я кнопка</Button>
     </Page>
   );
