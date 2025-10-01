@@ -1,32 +1,40 @@
 import { defineTextStyles } from '@pandacss/dev';
 
 export default defineTextStyles({
+  h1: {
+    value: {
+      fontSize: '32px',
+      lineHeight: '48px',
+    },
+  },
+  h2: {
+    value: {
+      fontSize: '28px',
+      lineHeight: '42px',
+    },
+  },
   h3: {
     value: {
       fontSize: '24px',
       lineHeight: '36px',
-      letterSpacing: '0',
     },
   },
   p2: {
     value: {
       fontSize: '20px',
       lineHeight: '32px',
-      letterSpacing: '0',
     },
   },
   p3: {
     value: {
       fontSize: '16px',
       lineHeight: '24px',
-      letterSpacing: '0',
     },
   },
   p4: {
     value: {
       fontSize: '14px',
       lineHeight: '20px',
-      letterSpacing: '0',
     },
   },
 });

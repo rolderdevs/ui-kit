@@ -1,10 +1,16 @@
-import { Button } from '@rolder/ui-kit-react';
+import { Button, Markdown } from '@rolder/ui-kit-react';
 import { createFileRoute } from '@tanstack/react-router';
+import { Page } from '@/components';
 
 export const Route = createFileRoute('/buttons/button')({
   component: RouteComponent,
 });
 
 function RouteComponent() {
-  return <Button m={10}>я кнопка</Button>;
+  return (
+    <Page title="Button">
+      <Markdown># Markdown This is a markdown example.</Markdown>
+      <Button>я кнопка</Button>
+    </Page>
+  );
 }
