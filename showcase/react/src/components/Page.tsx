@@ -7,10 +7,11 @@ interface PageProps extends VstackProps {
 
 export const Page = (props: PageProps) => {
   return (
-    <VStack p={4} {...props}>
+    <VStack p={4} alignItems="flex-start" {...props}>
       <Text level="h1" medium compact>
         {props.title}
       </Text>
+      {props.children}
     </VStack>
   );
 };
