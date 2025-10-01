@@ -7,6 +7,8 @@ export const Route = createFileRoute('/buttons/button')({
   component: RouteComponent,
 });
 
+console.log(description.replace(/\n+$/, ''));
+
 function RouteComponent() {
   return (
     <Page title="Button">

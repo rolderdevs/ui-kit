@@ -6,7 +6,7 @@ export const markdown = defineRecipe({
   base: {
     // Main container spacing
     '& > * + *': {
-      marginTop: '4',
+      mt: 4,
     },
 
     // Typography - headings
@@ -54,21 +54,21 @@ export const markdown = defineRecipe({
 
     // Typography - lists
     '& ol': {
-      marginLeft: '4',
+      ml: '4',
       listStylePosition: 'outside',
       listStyleType: 'decimal',
       whiteSpace: 'normal',
     },
 
     '& ul': {
-      marginLeft: '4',
+      ml: '4',
       listStylePosition: 'outside',
       listStyleType: 'disc',
       whiteSpace: 'normal',
     },
 
     '& li': {
-      paddingY: '1',
+      py: '1',
     },
 
     // Typography - text formatting
@@ -79,7 +79,7 @@ export const markdown = defineRecipe({
     '& a': {
       wordWrap: 'anywhere',
       fontWeight: 'medium',
-      color: 'primary',
+      color: 'fg',
       textDecoration: 'underline',
 
       '&[data-incomplete="true"]': {
@@ -95,7 +95,7 @@ export const markdown = defineRecipe({
     '& blockquote': {
       marginY: '4',
       borderLeft: '4px solid',
-      borderLeftColor: 'text.muted/30',
+      borderLeftColor: 'border',
       paddingLeft: '4',
       color: 'text.muted',
       fontStyle: 'italic',
@@ -104,9 +104,8 @@ export const markdown = defineRecipe({
     // Typography - inline code
     '& code': {
       borderRadius: 'xs',
-      backgroundColor: 'bg',
-      paddingX: '1.5',
-      paddingY: '0.5',
+      px: '1.5',
+      py: '0.5',
       fontFamily: 'mono',
       fontSize: 'sm',
     },
@@ -122,8 +121,8 @@ export const markdown = defineRecipe({
 
     // Code blocks
     '& [data-code-block-container]': {
-      marginY: '4',
-      width: 'full',
+      my: 4,
+      w: 'full',
       overflow: 'hidden',
       borderRadius: 'xl',
       border: '1px solid',
@@ -134,13 +133,14 @@ export const markdown = defineRecipe({
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'space-between',
-      backgroundColor: 'bg/80',
-      padding: '3',
+      backgroundColor: 'bg.brighter',
+      px: 3,
+      py: 2,
       color: 'text.muted',
       fontSize: 'xs',
 
       '& span': {
-        marginLeft: '1',
+        ml: '1',
         fontFamily: 'mono',
         textTransform: 'lowercase',
       },
@@ -153,7 +153,7 @@ export const markdown = defineRecipe({
 
       '& button': {
         cursor: 'pointer',
-        padding: '1',
+        p: 1,
         color: 'text.muted',
         transition: 'all',
         border: 'none',
@@ -169,8 +169,8 @@ export const markdown = defineRecipe({
       overflowX: 'auto',
       fontFamily: 'mono',
       fontSize: 'xs',
-      padding: '4',
-      backgroundColor: 'bg/40',
+      p: 4,
+      backgroundColor: 'bg.bright',
       borderTopWidth: '1px',
       borderTopColor: 'border',
     },
@@ -229,11 +229,11 @@ export const markdown = defineRecipe({
     },
 
     '& thead': {
-      backgroundColor: 'bg/80',
+      backgroundColor: 'bg.bright',
     },
 
     '& tbody': {
-      backgroundColor: 'bg/40',
+      backgroundColor: 'bg',
 
       '& tr:not(:last-child)': {
         borderBottomWidth: '1px',
@@ -249,7 +249,7 @@ export const markdown = defineRecipe({
     '& th': {
       whiteSpace: 'nowrap',
       paddingX: '4',
-      paddingY: '2',
+      py: '2',
       textAlign: 'left',
       fontWeight: 'semibold',
       fontSize: 'sm',
@@ -257,7 +257,7 @@ export const markdown = defineRecipe({
 
     '& td': {
       paddingX: '4',
-      paddingY: '2',
+      py: '2',
       fontSize: 'sm',
     },
 
@@ -278,7 +278,7 @@ export const markdown = defineRecipe({
       '& button': {
         width: '100%',
         paddingX: '3',
-        paddingY: '2',
+        py: '2',
         textAlign: 'left',
         fontSize: 'sm',
         transition: 'colors',
@@ -287,7 +287,7 @@ export const markdown = defineRecipe({
         background: 'transparent',
 
         '&:hover': {
-          backgroundColor: 'bg/40',
+          backgroundColor: 'bg',
         },
       },
     },
@@ -314,7 +314,7 @@ export const markdown = defineRecipe({
         inset: '0',
         display: 'none',
         borderRadius: 'lg',
-        backgroundColor: 'black/10',
+        backgroundColor: 'text/10',
       },
 
       '& > button': {
@@ -410,13 +410,13 @@ export const markdown = defineRecipe({
     '& .rounded-lg.border.border-red-200.bg-red-50.p-4': {
       borderRadius: 'lg',
       border: '1px solid',
-      borderColor: 'redApple.200',
-      backgroundColor: 'redApple.50',
+      borderColor: 'error',
+      backgroundColor: 'error.bg',
       padding: '4',
 
       '& .font-mono.text-red-700.text-sm': {
         fontFamily: 'mono',
-        color: 'redApple.700',
+        color: 'error',
         fontSize: 'sm',
       },
 
@@ -426,7 +426,7 @@ export const markdown = defineRecipe({
 
       '& .cursor-pointer.text-red-600.text-xs': {
         cursor: 'pointer',
-        color: 'redApple.600',
+        color: 'error',
         fontSize: 'xs',
       },
 
@@ -434,9 +434,9 @@ export const markdown = defineRecipe({
         marginTop: '2',
         overflowX: 'auto',
         borderRadius: 'sm',
-        backgroundColor: 'redApple.100',
+        backgroundColor: 'error.bg',
         padding: '2',
-        color: 'redApple.800',
+        color: 'error',
         fontSize: 'xs',
       },
     },

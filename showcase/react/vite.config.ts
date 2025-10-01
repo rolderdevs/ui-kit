@@ -15,7 +15,7 @@ export default defineConfig({
       name: 'markdown-loader',
       transform(code, id) {
         if (id.endsWith('.md')) {
-          return `export default ${JSON.stringify(code)};`;
+          return `export default ${JSON.stringify(code.trim())};`;
         }
       },
     },
