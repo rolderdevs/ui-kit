@@ -8,7 +8,4 @@ export default defineConfig({
     port: 3000,
   },
   plugins: [tsConfigPaths(), tanstackStart(), viteReact()],
-  ssr: {
-    noExternal: ['streamdown'],
-  },
 });

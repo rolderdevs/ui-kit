@@ -9,7 +9,7 @@ export const Route = createFileRoute('/buttons/button')({
 function RouteComponent() {
   return (
     <Page title="Button">
-      <Markdown># Markdown This is a markdown example.</Markdown>
+      <Markdown w="full"># Markdown This is a markdown example.</Markdown>
       <Button>я кнопка</Button>
     </Page>
   );
