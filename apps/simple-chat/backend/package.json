@@ -10,11 +10,11 @@
   "dependencies": {
     "@elysiajs/cors": "^1.4.0",
     "@openrouter/ai-sdk-provider": "^1.2.0",
-    "ai": "^5.0.57",
-    "elysia": "^1.4.8"
+    "ai": "^5.0.59",
+    "elysia": "^1.4.9"
   },
   "devDependencies": {
     "@types/bun": "^1.2.23",
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.3"
   }
 }
