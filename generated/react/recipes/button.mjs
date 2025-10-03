@@ -7,9 +7,6 @@ const buttonFn = /* @__PURE__ */ createRecipe('button', {
 }, [])
 
 const buttonVariantMap = {
-  "muted": [
-    "true"
-  ],
   "variant": [
     "primary",
     "secondary"

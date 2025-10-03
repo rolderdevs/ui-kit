@@ -7,10 +7,16 @@ const textP3VariantMap = {
   "medium": [
     "true"
   ],
+  "semimuted": [
+    "true"
+  ],
   "muted": [
     "true"
   ],
   "compact": [
+    "true"
+  ],
+  "link": [
     "true"
   ]
 }
