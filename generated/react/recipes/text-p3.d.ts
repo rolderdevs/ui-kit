@@ -4,8 +4,10 @@ import type { DistributiveOmit, Pretty } from '../types/system-types';
 
 interface TextP3Variant {
   medium: boolean
+semimuted: boolean
 muted: boolean
 compact: boolean
+link: boolean
 }
 
 type TextP3VariantMap = {
@@ -30,6 +32,6 @@ export interface TextP3Recipe {
 }
 
 /**
- * Text P3 component styles
+ * Text P3 component styles. Default styles for the Text component
  */
 export declare const textP3: TextP3Recipe

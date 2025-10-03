@@ -15,7 +15,7 @@ tasks:
   dev:
     command: "rsbuild dev"
     deps:
-      # - "apps/simple-chat-backend:dev"
+      - "apps/simple-chat-backend:dev"
       - "ds/kit-react:dev"
   prepare:
     command: "panda codegen"

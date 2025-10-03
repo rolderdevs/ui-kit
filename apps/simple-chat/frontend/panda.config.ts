@@ -6,7 +6,7 @@ export default defineConfig({
   preflight: true,
   presets: ['@pandacss/dev/presets', preset, theme],
   include: ['./src/**/*.{js,jsx,ts,tsx}'],
-  outdir: 'styled-system',
+  outdir: '../../../generated/react',
   importMap: '@rolder/ss-react',
   jsxFramework: 'react',
 });

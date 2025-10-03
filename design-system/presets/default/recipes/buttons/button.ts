@@ -20,7 +20,6 @@ export const button = defineRecipe({
     },
   },
   variants: {
-    muted: { true: { color: 'text.muted' } },
     variant: {
       primary: {
         bg: 'button.primary.bg',
