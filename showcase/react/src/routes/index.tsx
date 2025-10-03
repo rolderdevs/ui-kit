@@ -1,6 +1,4 @@
-import { HStack } from '@rolder/ss-react/jsx';
-import { Button, IconButton, Text } from '@rolder/ui-kit-react';
-import { IconChevronDown, IconTrash } from '@tabler/icons-react';
+import { createListCollection, Listbox } from '@rolder/ui-kit-react';
 import { createFileRoute } from '@tanstack/react-router';
 
 export const Route = createFileRoute('/')({
@@ -8,22 +6,21 @@ export const Route = createFileRoute('/')({
 });
 
 function Home() {
-  return (
-    <HStack m={10}>
-      <Text.H1 span>
-        H1
-        <Text span link>
-          SPAN
-        </Text>
-      </Text.H1>
+  const collection = createListCollection({
+    items: ['React', 'Solid', 'Vue', 'Svelte'],
+  });
 
-      <IconButton size="sm">
-        <IconTrash />
-      </IconButton>
-      <Button size="lg">
-        <IconChevronDown />
-        История изменений
-      </Button>
-    </HStack>
+  return (
+    <Listbox collection={collection}>
+      <Listbox.Label>Select your Framework</Listbox.Label>
+      <Listbox.Content>
+        {collection.items.map((item) => (
+          <Listbox.Item key={item} item={item}>
+            <Listbox.ItemText>{item}</Listbox.ItemText>
+            <Listbox.ItemIndicator />
+          </Listbox.Item>
+        ))}
+      </Listbox.Content>
+    </Listbox>
   );
 }

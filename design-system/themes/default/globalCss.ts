@@ -12,4 +12,9 @@ export default defineGlobalStyles({
     lineHeight: '24px',
     letterSpacing: '0',
   },
+  mark: {
+    bg: 'text.mark.bg',
+    color: 'text.mark.fg',
+    px: 0.5,
+  },
 });

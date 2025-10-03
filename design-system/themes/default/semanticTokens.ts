@@ -116,6 +116,19 @@ export default defineSemanticTokens({
           _dark: '{colors.gray.dark.600}',
         },
       },
+      mark: {
+        bg: {
+          value: {
+            base: '{colors.brand.dark.300}',
+            _dark: '{colors.brand.dark.600}',
+          },
+        },
+        fg: {
+          value: {
+            base: '{colors.brand.900}',
+          },
+        },
+      },
     },
     border: {
       DEFAULT: {
