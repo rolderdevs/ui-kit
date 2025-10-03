@@ -33,12 +33,12 @@ export const tabs = defineSlotRecipe({
       cursor: 'pointer',
       ring: 'none',
       _disabled: {
-        color: 'text.muted',
+        color: 'button.primary.fg.disabled',
       },
     },
     indicator: {
       rounded: 2,
-      bg: 'fg',
+      bg: 'button.primary.bg',
       '&[data-orientation="horizontal"]': {
         h: 1,
         w: 'var(--width)',

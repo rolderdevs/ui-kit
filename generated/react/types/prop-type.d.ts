@@ -151,7 +151,7 @@ export interface UtilityValues {
 	transitionProperty: "common" | "colors" | "size" | "position" | "background";
 	transition: "all" | "common" | "size" | "position" | "background" | "colors" | "opacity" | "shadow" | "transform";
 	animation: Tokens["animations"];
-	animationName: "spin" | "ping" | "pulse" | "bounce" | "collapsibleSlideDown" | "collapsibleSlideUp" | "fadeOut" | "slideOutToTop" | "slideInFromTop";
+	animationName: "spin" | "ping" | "pulse" | "bounce" | "collapsibleSlideDown" | "collapsibleSlideUp";
 	animationTimingFunction: Tokens["easings"];
 	animationDuration: Tokens["durations"];
 	animationDelay: Tokens["durations"];
@@ -203,8 +203,8 @@ export interface UtilityValues {
 	srOnly: boolean;
 	debug: boolean;
 	containerName: CssProperties["containerName"];
-	colorPalette: "current" | "black" | "white" | "transparent" | "rose" | "pink" | "fuchsia" | "purple" | "violet" | "indigo" | "sky" | "cyan" | "teal" | "emerald" | "green" | "lime" | "yellow" | "amber" | "red" | "neutral" | "stone" | "zinc" | "slate" | "gray" | "brand" | "redApple" | "orange" | "mint" | "blue" | "fg" | "fg.secondary" | "bg" | "text" | "border" | "icon" | "error" | "warning" | "success" | "info";
-	textStyle: "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | "3xl" | "4xl" | "5xl" | "6xl" | "7xl" | "8xl" | "9xl" | "h1" | "h2" | "h3" | "p2" | "p3" | "p4";
+	colorPalette: "current" | "black" | "white" | "transparent" | "rose" | "pink" | "fuchsia" | "purple" | "violet" | "indigo" | "blue" | "sky" | "cyan" | "teal" | "emerald" | "green" | "lime" | "yellow" | "amber" | "orange" | "red" | "neutral" | "stone" | "zinc" | "gray" | "slate";
+	textStyle: "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | "3xl" | "4xl" | "5xl" | "6xl" | "7xl" | "8xl" | "9xl";
 }
 
 

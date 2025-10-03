@@ -4,7 +4,12 @@ import theme from '@rolder/theme-default';
 
 export default defineConfig({
   preflight: true,
-  include: ['@rolder/ui-kit-react/src/**/*.tsx', './src/**/*.{js,jsx,ts,tsx}'],
+  include: [
+    '../../design-system/elements/react/src/**/*.tsx',
+    '../../streamdown/packages/streamdown/lib/**/*.tsx',
+    '../../streamdown/packages/streamdown/index.tsx',
+    './src/**/*.{js,jsx,ts,tsx}',
+  ],
   presets: ['@pandacss/dev/presets', preset, theme],
   importMap: '@rolder/ss-react',
   jsxFramework: 'react',

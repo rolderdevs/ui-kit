@@ -20,27 +20,28 @@ export const button = defineRecipe({
     },
   },
   variants: {
+    muted: { true: { color: 'text.muted' } },
     variant: {
       primary: {
-        bg: 'fg',
-        color: 'text.inverted',
+        bg: 'button.primary.bg',
+        color: 'button.primary.fg',
         _hover: {
-          bg: 'fg.bright',
+          bg: 'button.primary.bg.hover',
         },
         _disabled: {
-          color: 'text.muted',
-          bg: 'fg.muted',
+          color: 'button.primary.fg.disabled',
+          bg: 'button.primary.bg.disabled',
         },
       },
       secondary: {
-        bg: 'fg.secondary',
-        color: 'text',
+        bg: 'button.secondary.bg',
+        color: 'button.secondary.fg',
         _hover: {
-          bg: 'fg.secondary.bright',
+          bg: 'button.secondary.bg.hover',
         },
         _disabled: {
-          color: 'text.muted',
-          bg: 'fg.secondary.muted',
+          color: 'button.secondary.fg.disabled',
+          bg: 'button.secondary.bg.disabled',
         },
       },
     },
@@ -51,7 +52,11 @@ export const button = defineRecipe({
         py: 1.5,
         gap: 1,
         rounded: 'sm',
-        textStyle: 'p4m',
+        textStyle: 'p4',
+        fontWeight: '500',
+        '& > svg': {
+          boxSize: 5,
+        },
       },
       md: {
         h: 11,
@@ -59,7 +64,11 @@ export const button = defineRecipe({
         py: 2.5,
         gap: 1.5,
         rounded: '10px',
-        textStyle: 'p3m',
+        textStyle: 'p3',
+        fontWeight: '500',
+        '& > svg': {
+          boxSize: 6,
+        },
       },
       lg: {
         h: '52px',
@@ -67,14 +76,22 @@ export const button = defineRecipe({
         py: 3.5,
         gap: 2,
         rounded: 'md',
-        textStyle: 'p3m',
+        textStyle: 'p3',
+        fontWeight: '500',
+        '& > svg': {
+          boxSize: 6,
+        },
       },
       xl: {
         h: '72px',
         p: 5,
         gap: 2,
         rounded: 'lg',
-        textStyle: 'p2m',
+        textStyle: 'p2',
+        fontWeight: '500',
+        '& > svg': {
+          boxSize: 8,
+        },
       },
     },
     fullWidth: {

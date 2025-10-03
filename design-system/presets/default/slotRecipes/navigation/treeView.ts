@@ -27,10 +27,10 @@ export const treeView = defineSlotRecipe({
       transition: 'color 0.1s ease-in-out, background-color 0.1s ease-in-out',
       paddingInlineStart: 'calc((var(--depth) - 1) * var(--depth-offset))',
       _selected: {
-        bg: 'fg.secondary',
+        bg: 'bg.brand',
       },
       _hover: {
-        bg: 'fg.secondary.bright',
+        bg: 'bg.brand.accent',
       },
     },
     branchTrigger: {
@@ -44,7 +44,7 @@ export const treeView = defineSlotRecipe({
       transition: 'background-color 0.1s ease-in-out',
       paddingInlineStart: 'calc((var(--depth) - 1) * var(--depth-offset))',
       _hover: {
-        bg: 'fg.secondary.bright',
+        bg: 'bg.brand.accent',
       },
     },
     branchIndicator: {
@@ -95,10 +95,10 @@ export const treeView = defineSlotRecipe({
       transition: 'color 0.1s ease-in-out, background-color 0.1s ease-in-out',
       paddingInlineStart: 'calc((var(--depth) - 1) * var(--depth-offset))',
       _selected: {
-        bg: 'fg.secondary',
+        bg: 'bg.brand',
       },
       _hover: {
-        bg: 'fg.secondary.bright',
+        bg: 'bg.brand.accent',
       },
     },
     itemText: {

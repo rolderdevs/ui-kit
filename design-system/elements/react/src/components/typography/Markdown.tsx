@@ -1,14 +1,4 @@
-import { cx } from '@rolder/ss-react/css';
 import { styled } from '@rolder/ss-react/jsx';
-import { markdown } from '@rolder/ss-react/recipes';
-import type { ComponentProps } from '@rolder/ss-react/types';
-import { Streamdown } from 'streamdown';
+import { Streamdown } from '@rolder/streamdown';
 
-const StyledMardown = styled(Streamdown);
-
-export const Markdown = ({
-  className,
-  ...props
-}: ComponentProps<typeof StyledMardown>) => {
-  return <StyledMardown className={cx(markdown(), className)} {...props} />;
-};
+export const Markdown = styled(Streamdown);

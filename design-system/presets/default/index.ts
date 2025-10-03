@@ -14,7 +14,8 @@ export default definePreset({
   },
   staticCss: {
     recipes: {
-      // tabs: ['*'],
+      // iconButton: [{ size: ['*'] }],
+      // textP3: ['*']
     },
   },
 });

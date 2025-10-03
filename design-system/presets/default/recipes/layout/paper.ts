@@ -4,7 +4,7 @@ export const paper = defineRecipe({
   className: 'paper',
   description: 'Paper component',
   base: {
-    bg: 'bg.bright',
+    bg: 'paper.bg',
     shadow: 'low',
     backdropBlur: 'sm',
     rounded: 'md',

@@ -1,0 +1,10 @@
+id: "ds/ss-react"
+
+project:
+  name: "SS for React"
+  description: "Generated panda styled system for React"
+
+tasks:
+  publish:
+    command: "bun publish"
+    local: true

@@ -3,14 +3,6 @@
   "version": "0.1.0-1",
   "type": "module",
   "description": "Styled system for React",
-  "devDependencies": {
-    "@pandacss/dev": "^1.4.0",
-    "@rolder/preset-default": "workspace:*",
-    "@rolder/theme-default": "workspace:*"
-  },
-  "scripts": {
-    "build": "panda && panda codegen"
-  },
   "files": [
     "css",
     "tokens",

@@ -2,9 +2,11 @@ import { defineGlobalStyles } from '@pandacss/dev';
 
 export default defineGlobalStyles({
   'html, body': {
-    color: '{colors.text}',
-    background: '{colors.bg}',
-    fontFamily: 'IBM Plex Sans, sans-serif',
+    color: 'text',
+    bg: 'bg.body',
+    '--global-font-body': 'IBM Plex Sans, sans-serif',
+    '--global-color-placeholder': 'bg',
+    '--global-color-border': 'border',
     fontWeight: '400',
     fontSize: '16px',
     lineHeight: '24px',

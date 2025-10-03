@@ -1,64 +1,93 @@
+/* Для чего нужны:
+- Связывают рецепты с палитрой цветов. Это позволяет создавать новые темы, меняя только палитру.
+- Задают стандарт использования цветов при разработке.
+  Если разработчик следует ему, смена темы, опять же, просиходит простой заменой палитры.
+
+Правила формирования семантических цветов
+- Семантика выражена в 2-х наборах - общий и целевой.
+- Целевой набор связывает рецепты с палитрой. Названия цветов получаются длинными, зато однозначными.
+  Логика простая - прямая связь не дает запутатся.
+- Общий набор используется разработчиком приложения. Здесь используются короткие названия для хорошего DX.
+- Любое значение должно иметь условие _dark. Для этого в палитре цветов задан стандарт - любой цвет имеет вариант dark.
+
+Такие правила позволяют добиться двух, противоречящих целей - стандартизовать и сделать разработку удобной.
+
+*/
+
 import { defineSemanticTokens } from '@pandacss/dev';
 
 export default defineSemanticTokens({
+  // **
+  // Общий набор
+  // **
   colors: {
-    fg: {
-      DEFAULT: {
-        value: {
-          base: '{colors.brand.500}',
-          _osDark: '{colors.amber.700}',
-        },
-      },
-      bright: {
-        value: {
-          base: '{colors.brand.700}',
-          _osDark: '{colors.amber.600}',
-        },
-      },
-      muted: {
-        value: {
-          base: '{colors.gray.200}',
-          _osDark: '{colors.amber.900}',
-        },
-      },
-      secondary: {
-        DEFAULT: {
-          value: {
-            base: '{colors.gray.200}',
-            _osDark: '{colors.stone.800}',
-          },
-        },
-        bright: {
-          value: {
-            base: '{colors.gray.100}',
-            _osDark: '{colors.stone.700}',
-          },
-        },
-        muted: {
-          value: {
-            base: '{colors.gray.300}',
-            _osDark: '{colors.stone.900}',
-          },
-        },
-      },
-    },
+    // По разному формируется для светлой и темной темы
+    // В темной просто - чем выше слой, тем светлее
+    // В светлой чуть иначе - body темнее, surface самый свелый, далее от него каждый слой темнее
     bg: {
-      DEFAULT: {
+      body: {
         value: {
           base: '{colors.gray.100}',
-          _osDark: '{colors.stone.950}',
+          _dark: '{colors.gray.dark.950}',
         },
       },
-      bright: {
+      // равен surface
+      DEFAULT: {
         value: {
           base: '{colors.gray.50}',
-          _osDark: '{colors.stone.900}',
+          _dark: '{colors.gray.dark.900}',
         },
       },
-      brighter: {
+      surface: {
         value: {
-          base: '{colors.white}',
-          _osDark: '{colors.stone.800}',
+          base: '{colors.gray.50}',
+          _dark: '{colors.gray.dark.900}',
+        },
+      },
+      raised: {
+        value: {
+          base: '{colors.gray.100}',
+          _dark: '{colors.gray.dark.800}',
+        },
+      },
+      accent: {
+        value: {
+          base: '{colors.gray.200}',
+          _dark: '{colors.gray.dark.700}',
+        },
+      },
+      // Для разработчика, который решил сделать что-то кастомное в своем проекте
+      brand: {
+        body: {
+          value: {
+            base: '{colors.brand.50}',
+            _dark: '{colors.brand.dark.950}',
+          },
+        },
+        // равен surface
+        DEFAULT: {
+          value: {
+            base: '{colors.brand.100}',
+            _dark: '{colors.brand.dark.900}',
+          },
+        },
+        surface: {
+          value: {
+            base: '{colors.brand.100}',
+            _dark: '{colors.brand.dark.900}',
+          },
+        },
+        raised: {
+          value: {
+            base: '{colors.brand.100}',
+            _dark: '{colors.brand.dark.800}',
+          },
+        },
+        accent: {
+          value: {
+            base: '{colors.brand.200}',
+            _dark: '{colors.brand.dark.700}',
+          },
         },
       },
     },
@@ -66,25 +95,25 @@ export default defineSemanticTokens({
       DEFAULT: {
         value: {
           base: '{colors.gray.900}',
-          _osDark: '{colors.stone.200}',
+          _dark: '{colors.gray.dark.100}',
         },
       },
-      bright: {
+      accent: {
         value: {
-          base: '{colors.gray.950}',
-          _osDark: '{colors.stone.200}',
+          base: '{colors.brand.500}',
+          _dark: '{colors.brand.dark.500}',
+        },
+      },
+      semimuted: {
+        value: {
+          base: '{colors.gray.600}',
+          _dark: '{colors.gray.dark.400}',
         },
       },
       muted: {
         value: {
-          base: '{colors.gray.500}',
-          _osDark: '{colors.stone.500}',
-        },
-      },
-      inverted: {
-        value: {
-          base: '{colors.gray.100}',
-          _osDark: '{colors.stone.100}',
+          base: '{colors.gray.400}',
+          _dark: '{colors.gray.dark.600}',
         },
       },
     },
@@ -92,83 +121,130 @@ export default defineSemanticTokens({
       DEFAULT: {
         value: {
           base: '{colors.gray.200}',
-          _osDark: '{colors.stone.700}',
-        },
-      },
-      hover: {
-        value: {
-          base: '{colors.gray.400}',
-          _osDark: '{colors.stone.600}',
+          _dark: '{colors.gray.dark.700}',
         },
       },
     },
+    // **
+    // Набор для элементов
+    // **
     icon: {
-      DEFAULT: {
-        value: {
-          base: '{colors.gray.900}',
-          _osDark: '{colors.stone.200}',
+      fg: {
+        DEFAULT: {
+          value: {
+            base: '{colors.gray.900}',
+            _dark: '{colors.gray.dark.300}',
+          },
         },
-      },
-      muted: {
-        value: {
-          base: '{colors.gray.400}',
-          _osDark: '{colors.stone.600}',
-        },
-      },
-    },
-    error: {
-      DEFAULT: {
-        value: {
-          base: '{colors.redApple.500}',
-          _osDark: '{colors.redApple.800}',
+        disabled: {
+          value: {
+            base: '{colors.gray.400}',
+            _dark: '{colors.gray.dark.600}',
+          },
         },
       },
       bg: {
-        value: {
-          base: '{colors.redApple.100}',
-          _osDark: '{colors.redApple.900/30}',
+        hover: {
+          value: {
+            base: '{colors.gray.200}',
+            _dark: '{colors.gray.dark.800}',
+          },
+        },
+        active: {
+          value: {
+            base: '{colors.brand.100}',
+            _dark: '{colors.brand.dark.800}',
+          },
+        },
+        disabled: {
+          value: {
+            base: '{colors.gray.200}',
+            _dark: '{colors.gray.dark.800}',
+          },
         },
       },
     },
-    warning: {
-      DEFAULT: {
-        value: {
-          base: '{colors.orange.500}',
-          _osDark: '{colors.orange.800}',
+    button: {
+      primary: {
+        fg: {
+          DEFAULT: {
+            value: {
+              base: '{colors.gray.50}',
+              _dark: '{colors.gray.dark.100}',
+            },
+          },
+          disabled: {
+            value: {
+              base: '{colors.gray.400}',
+              _dark: '{colors.gray.dark.500}',
+            },
+          },
+        },
+        bg: {
+          DEFAULT: {
+            value: {
+              base: '{colors.brand.500}',
+              _dark: '{colors.brand.dark.800}',
+            },
+          },
+          hover: {
+            value: {
+              base: '{colors.brand.700}',
+              _dark: '{colors.brand.dark.700}',
+            },
+          },
+          disabled: {
+            value: {
+              base: '{colors.gray.200}',
+              _dark: '{colors.gray.dark.800}',
+            },
+          },
         },
       },
-      bg: {
-        value: {
-          base: '{colors.orange.100}',
-          _osDark: '{colors.orange.900/30}',
+      secondary: {
+        fg: {
+          DEFAULT: {
+            value: {
+              base: '{colors.gray.900}',
+              _dark: '{colors.gray.dark.100}',
+            },
+          },
+          disabled: {
+            value: {
+              base: '{colors.gray.400}',
+              _dark: '{colors.gray.dark.500}',
+            },
+          },
+        },
+        bg: {
+          DEFAULT: {
+            value: {
+              base: '{colors.gray.200}',
+              _dark: '{colors.gray.dark.800}',
+            },
+          },
+          hover: {
+            value: {
+              base: '{colors.gray.400}',
+              _dark: '{colors.gray.dark.700}',
+            },
+          },
+          disabled: {
+            value: {
+              base: '{colors.gray.200}',
+              _dark: '{colors.gray.dark.800}',
+            },
+          },
         },
       },
     },
-    success: {
-      DEFAULT: {
-        value: {
-          base: '{colors.mint.500}',
-          _osDark: '{colors.mint.800}',
-        },
-      },
+    paper: {
       bg: {
-        value: {
-          base: '{colors.mint.100}',
-          _osDark: '{colors.mint.900/30}',
-        },
-      },
-    },
-    info: {
-      DEFAULT: {
-        value: {
-          base: '{colors.blue.500}',
-          _osDark: '{colors.blue.800}',
-        },
-      },
-      bg: {
-        value: {
-          base: '{colors.blue.100}',
-          _osDark: '{colors.blue.900/30}',
+        DEFAULT: {
+          value: {
+            base: '{colors.gray.50}',
+            _dark: '{colors.gray.dark.900}',
+          },
         },
       },
     },

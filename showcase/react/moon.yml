@@ -14,8 +14,8 @@ tasks:
       - "./src/**/*"
   dev:
     command: "vite dev"
-    deps:
-      - "ds/ss-react:dev"
+    # deps:
+    #   - "ds/ss-react:dev"
   prepare:
     command: "panda codegen"
   build:

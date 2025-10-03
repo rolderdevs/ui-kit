@@ -63,14 +63,51 @@ email@example.com
 
 ## Блоки кода
 
-```javascript
-function helloWorld() {
-  console.log("Hello, World!");
-  return true;
-}
+```tsx
+"use client";
 
-const numbers = [1, 2, 3, 4, 5];
-const doubled = numbers.map((n) => n * 2);
+import { useChat } from "@ai-sdk/react";
+import { useState } from "react";
+import { Streamdown } from "streamdown";
+
+export default function Page() {
+  const { messages, sendMessage, status } = useChat();
+  const [input, setInput] = useState("");
+
+  return (
+    <>
+      {messages.map((message) => (
+        <div key={message.id}>
+          {message.parts
+            .filter((part) => part.type === "text")
+            .map((part, index) => (
+              <Streamdown key={index}>{part.text}</Streamdown>
+            ))}
+        </div>
+      ))}
+
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          if (input.trim()) {
+            sendMessage({ text: input });
+            setInput("");
+          }
+        }}
+      >
+        <input
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+          disabled={status !== "ready"}
+          placeholder="Say something..."
+        />
+        <button type="submit" disabled={status !== "ready"}>
+          Submit
+        </button>
+      </form>
+    </>
+  );
+}
 ```
 
 ```python

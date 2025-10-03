@@ -1,12 +1,11 @@
 import { defineConfig } from '@pandacss/dev';
 import preset from '@rolder/preset-default';
-import theme from '@rolder/theme-default';
 
 export default defineConfig({
   preflight: true,
-  presets: ['@pandacss/dev/presets', preset, theme],
+  presets: ['@pandacss/dev/presets', preset],
   include: ['./src/**/*.{js,jsx,ts,tsx}'],
-  outdir: 'styled-system',
+  outdir: '../../../generated/react',
   importMap: '@rolder/ss-react',
   jsxFramework: 'react',
 });

@@ -37,4 +37,10 @@ export default defineTextStyles({
       lineHeight: '20px',
     },
   },
+  p5: {
+    value: {
+      fontSize: '12px',
+      lineHeight: '16px',
+    },
+  },
 });

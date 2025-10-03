@@ -1,19 +1,18 @@
+/* Правила формирования палитры цветов
+
+- Все названия цветов не должны отходить от стандартных. green, а не teal, red, а не rose или redApple.
+  Сделано это, чтобы ссылка на цвета в семантических токенах были одинаковые для разных тем.
+- Если стандартные цвета меняют оттенки темы, то brand задает основной цвет акцентов.
+- Цвета должны иметь дополнительную палитру для темной темы, даже если сами цвета не отличаются.
+  Это нужно, чтобы семантические токены были одинаковыми для разных тем.
+- Шейдов всегда 11, от 50 до 950. Если в исходной палитре нет всех шейдов, ИИ хорошо их вычисляет.
+
+*/
+
 import { defineTokens } from '@pandacss/dev';
 
 export default defineTokens({
   colors: {
-    gray: {
-      50: { value: '#FBFBFB' },
-      100: { value: '#F2F3F7' },
-      200: { value: '#E2E5EB' },
-      300: { value: '#D5DBE1' },
-      400: { value: '#BBC1C7' },
-      500: { value: '#969FA8' },
-      600: { value: '#626C77' },
-      700: { value: '#434A51' },
-      800: { value: '#1D2023' },
-      900: { value: '#1D2023' },
-    },
     brand: {
       50: { value: '#E6EBFE' },
       100: { value: '#CDD8FE' },
@@ -25,8 +24,48 @@ export default defineTokens({
       700: { value: '#042495' },
       800: { value: '#031863' },
       900: { value: '#010C32' },
+      950: { value: '#00081E' },
+      dark: {
+        50: { value: '#fffbeb' },
+        100: { value: '#fef3c7' },
+        200: { value: '#fde68a' },
+        300: { value: '#fcd34d' },
+        400: { value: '#fbbf24' },
+        500: { value: '#f59e0b' },
+        600: { value: '#d97706' },
+        700: { value: '#b45309' },
+        800: { value: '#92400e' },
+        900: { value: '#78350f' },
+        950: { value: '#451a03' },
+      },
     },
-    redApple: {
+    gray: {
+      50: { value: '#FBFBFB' },
+      100: { value: '#F2F3F7' },
+      200: { value: '#E2E5EB' },
+      300: { value: '#D5DBE1' },
+      400: { value: '#BBC1C7' },
+      500: { value: '#969FA8' },
+      600: { value: '#626C77' },
+      700: { value: '#434A51' },
+      800: { value: '#1D2023' },
+      900: { value: '#1D2023' },
+      950: { value: '#121416' },
+      dark: {
+        50: { value: '#fafaf9' },
+        100: { value: '#f5f5f4' },
+        200: { value: '#e7e5e4' },
+        300: { value: '#d6d3d1' },
+        400: { value: '#a8a29e' },
+        500: { value: '#78716c' },
+        600: { value: '#57534e' },
+        700: { value: '#44403c' },
+        800: { value: '#292524' },
+        900: { value: '#1c1917' },
+        950: { value: '#0c0a09' },
+      },
+    },
+    red: {
       50: { value: '#FFF3F3' },
       100: { value: '#FEE7E7' },
       200: { value: '#FEC5C5' },
@@ -37,6 +76,20 @@ export default defineTokens({
       700: { value: '#BA0C0C' },
       800: { value: '#8F0A0A' },
       900: { value: '#6E0808' },
+      950: { value: '#4A0505' },
+      dark: {
+        50: { value: '#FFF3F3' },
+        100: { value: '#FEE7E7' },
+        200: { value: '#FEC5C5' },
+        300: { value: '#FB8A89' },
+        400: { value: '#F96D6C' },
+        500: { value: '#F2423D' },
+        600: { value: '#D82222' },
+        700: { value: '#BA0C0C' },
+        800: { value: '#8F0A0A' },
+        900: { value: '#6E0808' },
+        950: { value: '#4A0505' },
+      },
     },
     orange: {
       50: { value: '#FFF4E3' },
@@ -49,8 +102,22 @@ export default defineTokens({
       700: { value: '#F17809' },
       800: { value: '#D56A08' },
       900: { value: '#AE5706' },
+      950: { value: '#7A3C04' },
+      dark: {
+        50: { value: '#FFF4E3' },
+        100: { value: '#FEEACD' },
+        200: { value: '#FCD69C' },
+        300: { value: '#FBC16A' },
+        400: { value: '#F9AC39' },
+        500: { value: '#FDA727' },
+        600: { value: '#F89219' },
+        700: { value: '#F17809' },
+        800: { value: '#D56A08' },
+        900: { value: '#AE5706' },
+        950: { value: '#7A3C04' },
+      },
     },
-    mint: {
+    green: {
       50: { value: '#E8FBF7' },
       100: { value: '#D6F5EB' },
       200: { value: '#AEEAD7' },
@@ -61,6 +128,20 @@ export default defineTokens({
       700: { value: '#097C77' },
       800: { value: '#075C59' },
       900: { value: '#053A39' },
+      950: { value: '#032524' },
+      dark: {
+        50: { value: '#E8FBF7' },
+        100: { value: '#D6F5EB' },
+        200: { value: '#AEEAD7' },
+        300: { value: '#85E0C3' },
+        400: { value: '#5DD5AF' },
+        500: { value: '#01CEA2' },
+        600: { value: '#05A68D' },
+        700: { value: '#097C77' },
+        800: { value: '#075C59' },
+        900: { value: '#053A39' },
+        950: { value: '#032524' },
+      },
     },
     blue: {
       50: { value: '#E8F3FD' },
@@ -73,6 +154,20 @@ export default defineTokens({
       700: { value: '#043F88' },
       800: { value: '#09345D' },
       900: { value: '#041A2F' },
+      950: { value: '#02101C' },
+      dark: {
+        50: { value: '#E8F3FD' },
+        100: { value: '#E2F0FD' },
+        200: { value: '#BCDDFB' },
+        300: { value: '#8DC4F8' },
+        400: { value: '#70B4F4' },
+        500: { value: '#479DEE' },
+        600: { value: '#1858A8' },
+        700: { value: '#043F88' },
+        800: { value: '#09345D' },
+        900: { value: '#041A2F' },
+        950: { value: '#02101C' },
+      },
     },
   },
 });

@@ -1,8 +1,5 @@
 id: "apps/simple-chat-backend"
 
-tags:
-  - simple-chat
-
 project:
   name: "Simple Chat Backend"
   description: "Simple Chat Backend"

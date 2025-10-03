@@ -14,7 +14,7 @@ import {
 } from '@tabler/icons-react';
 import { Link, useRouter } from '@tanstack/react-router';
 
-const Navigation = () => {
+export const Navigation = () => {
   const router = useRouter();
   const currentPath = router.state.location.pathname;
   const defaultExpandedValue = currentPath.replace(/\/[^/]*$/, '');
@@ -109,5 +109,3 @@ const collection = createTreeCollection<Node>({
     ],
   },
 });
-
-export default Navigation;

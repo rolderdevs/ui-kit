@@ -14,8 +14,13 @@ tasks:
       - "./src/**/*"
   dev:
     command: "rsbuild dev"
+    deps:
+      # - "apps/simple-chat-backend:dev"
+      - "ds/kit-react:dev"
   prepare:
     command: "panda codegen"
+  preview:
+    command: "rsbuild preview"
   build:
     command: "rsbuild build"
     inputs:

@@ -17,7 +17,6 @@ export default defineConfig({
   output: {
     target: 'web',
     externals: ['react', 'react-dom', '@rolder/ss-react'],
-    // emitCss: true,
   },
   plugins: [pluginReact()],
 });

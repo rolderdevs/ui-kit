@@ -2,8 +2,10 @@
   "name": "ui-kit-workspace",
   "workspaces": [
     "design-system/**",
+    "generated/**",
     "apps/**",
-    "showcase/**"
+    "showcase/**",
+    "streamdown/packages/streamdown"
   ],
   "devDependencies": {
     "@biomejs/biome": "2.2.4",

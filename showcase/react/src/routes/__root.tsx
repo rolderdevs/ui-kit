@@ -6,7 +6,7 @@ import {
   Scripts,
 } from '@tanstack/react-router';
 import type { ReactNode } from 'react';
-import Navigation from '@/Navigation';
+import { Navigation, ThemeProvider } from '@/components';
 import appCss from '../styles.css?url';
 
 export const Route = createRootRoute({
@@ -39,18 +39,20 @@ export const Route = createRootRoute({
 
 function RootComponent() {
   return (
-    <RootDocument>
-      <HStack alignItems="flex-start">
-        <Navigation />
-        <Outlet />
-      </HStack>
-    </RootDocument>
+    <ThemeProvider>
+      <RootDocument>
+        <HStack alignItems="flex-start">
+          <Navigation />
+          <Outlet />
+        </HStack>
+      </RootDocument>
+    </ThemeProvider>
   );
 }
 
 function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
   return (
-    <html lang="ru">
+    <html lang="ru" suppressHydrationWarning>
       <head>
         <HeadContent />
       </head>
